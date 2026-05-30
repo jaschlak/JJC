@@ -1,0 +1,76 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="760" viewBox="0 0 1200 760">
+  <title>JJC V1 dowel centering ring fit diagram</title>
+  <desc>Diagram showing the dowel centering ring as a washer-like part and how it fits around the dowel inside the juggling club body.</desc>
+
+  <defs>
+    <style>
+      .bg { fill: #f7f7f2; }
+      .panel { fill: #ffffff; stroke: #2f3437; stroke-width: 2; }
+      .title { font: 700 34px Arial, sans-serif; fill: #202426; }
+      .subtitle { font: 600 24px Arial, sans-serif; fill: #202426; }
+      .label { font: 20px Arial, sans-serif; fill: #202426; }
+      .small { font: 16px Arial, sans-serif; fill: #4b5357; }
+      .club { fill: #d7ece8; stroke: #1f6f68; stroke-width: 4; }
+      .ring { fill: #f1c75b; stroke: #8b6515; stroke-width: 4; }
+      .ring-cut { fill: #ffffff; stroke: #8b6515; stroke-width: 4; }
+      .dowel { fill: #b98554; stroke: #68401f; stroke-width: 4; }
+      .axis { stroke: #50585c; stroke-width: 2; stroke-dasharray: 12 10; }
+      .dim { stroke: #202426; stroke-width: 2; marker-start: url(#arrow); marker-end: url(#arrow); }
+      .callout { stroke: #202426; stroke-width: 2; fill: none; }
+    </style>
+    <marker id="arrow" markerWidth="10" markerHeight="10" refX="5" refY="5" orient="auto-start-reverse">
+      <path d="M 0 0 L 10 5 L 0 10 z" fill="#202426"/>
+    </marker>
+  </defs>
+
+  <rect class="bg" x="0" y="0" width="1200" height="760"/>
+  <text class="title" x="60" y="64">JJC V1 - Item 2 - Dowel Centering Ring</text>
+  <text class="small" x="60" y="96">Purpose: keep a 1/2 inch dowel centered inside the hollow club body.</text>
+
+  <rect class="panel" x="60" y="130" width="500" height="560" rx="8"/>
+  <text class="subtitle" x="100" y="180">Part: top view</text>
+
+  <circle class="ring" cx="310" cy="390" r="145"/>
+  <circle class="ring-cut" cx="310" cy="390" r="55"/>
+  <line class="axis" x1="135" y1="390" x2="485" y2="390"/>
+  <line class="axis" x1="310" y1="215" x2="310" y2="565"/>
+
+  <line class="dim" x1="165" y1="590" x2="455" y2="590"/>
+  <text class="label" x="221" y="625">35 mm outer diameter</text>
+
+  <line class="dim" x1="255" y1="190" x2="365" y2="190"/>
+  <text class="label" x="210" y="160">13.2 mm dowel hole</text>
+
+  <text class="small" x="112" y="668">Thickness: 6 mm, with a small chamfer on edges</text>
+
+  <rect class="panel" x="640" y="130" width="500" height="560" rx="8"/>
+  <text class="subtitle" x="680" y="180">Fit inside club body</text>
+
+  <path class="club" d="M 900 220
+                        C 1040 270, 1080 470, 900 610
+                        C 720 470, 760 270, 900 220 z"/>
+  <line class="axis" x1="900" y1="205" x2="900" y2="635"/>
+
+  <rect class="dowel" x="875" y="190" width="50" height="460" rx="10"/>
+  <ellipse class="dowel" cx="900" cy="190" rx="25" ry="11"/>
+  <ellipse class="dowel" cx="900" cy="650" rx="25" ry="11"/>
+
+  <ellipse class="ring" cx="900" cy="392" rx="122" ry="28"/>
+  <ellipse class="ring-cut" cx="900" cy="392" rx="38" ry="11"/>
+  <rect class="ring" x="778" y="392" width="244" height="46"/>
+  <ellipse class="ring" cx="900" cy="438" rx="122" ry="28"/>
+  <ellipse class="ring-cut" cx="900" cy="438" rx="38" ry="11"/>
+  <rect class="dowel" x="875" y="348" width="50" height="136" rx="10"/>
+
+  <path class="callout" d="M 770 395 C 715 375, 690 350, 680 312"/>
+  <text class="label" x="680" y="295">Item 2: Centering ring</text>
+  <text class="small" x="680" y="320">slides over the dowel</text>
+
+  <path class="callout" d="M 925 270 C 990 235, 1030 230, 1060 250"/>
+  <text class="label" x="1000" y="235">Dowel rod</text>
+  <text class="small" x="1000" y="260">1/2 inch = 12.7 mm</text>
+
+  <path class="callout" d="M 1035 480 C 1085 500, 1100 535, 1088 575"/>
+  <text class="label" x="955" y="605">Hollow club body</text>
+  <text class="small" x="955" y="630">future shell section</text>
+</svg>

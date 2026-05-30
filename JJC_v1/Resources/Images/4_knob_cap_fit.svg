@@ -1,0 +1,75 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="760" viewBox="0 0 1200 760">
+  <title>JJC V1 knob cap fit diagram</title>
+  <desc>Diagram showing the knob cap as a TPU end cap with a blind socket for the 1/2 inch dowel rod.</desc>
+
+  <defs>
+    <style>
+      .bg { fill: #f7f7f2; }
+      .panel { fill: #ffffff; stroke: #2f3437; stroke-width: 2; }
+      .title { font: 700 34px Arial, sans-serif; fill: #202426; }
+      .subtitle { font: 600 24px Arial, sans-serif; fill: #202426; }
+      .label { font: 20px Arial, sans-serif; fill: #202426; }
+      .small { font: 16px Arial, sans-serif; fill: #4b5357; }
+      .cap { fill: #86a6d9; stroke: #274d85; stroke-width: 4; }
+      .cap-cut { fill: #ffffff; stroke: #274d85; stroke-width: 4; }
+      .dowel { fill: #b98554; stroke: #68401f; stroke-width: 4; }
+      .axis { stroke: #50585c; stroke-width: 2; stroke-dasharray: 12 10; }
+      .dim { stroke: #202426; stroke-width: 2; marker-start: url(#arrow); marker-end: url(#arrow); }
+      .callout { stroke: #202426; stroke-width: 2; fill: none; }
+    </style>
+    <marker id="arrow" markerWidth="10" markerHeight="10" refX="5" refY="5" orient="auto-start-reverse">
+      <path d="M 0 0 L 10 5 L 0 10 z" fill="#202426"/>
+    </marker>
+  </defs>
+
+  <rect class="bg" x="0" y="0" width="1200" height="760"/>
+  <text class="title" x="60" y="64">JJC V1 - Item 4 - Knob Cap</text>
+  <text class="small" x="60" y="96">Purpose: protect the dowel end and form the rounded handle-end knob.</text>
+
+  <rect class="panel" x="60" y="130" width="500" height="560" rx="8"/>
+  <text class="subtitle" x="100" y="180">Part: blind socket cap</text>
+
+  <ellipse class="cap" cx="310" cy="240" rx="145" ry="40"/>
+  <rect class="cap" x="165" y="240" width="290" height="260"/>
+  <ellipse class="cap" cx="310" cy="500" rx="145" ry="40"/>
+  <ellipse class="cap-cut" cx="310" cy="240" rx="57" ry="17"/>
+  <rect class="cap-cut" x="253" y="240" width="114" height="190"/>
+  <ellipse class="cap-cut" cx="310" cy="430" rx="57" ry="17"/>
+  <line class="axis" x1="310" y1="180" x2="310" y2="560"/>
+
+  <line class="dim" x1="165" y1="610" x2="455" y2="610"/>
+  <text class="label" x="220" y="645">34 mm outer diameter</text>
+
+  <line class="dim" x1="485" y1="240" x2="485" y2="500"/>
+  <text class="label" x="505" y="378">28 mm height</text>
+
+  <line class="dim" x1="395" y1="240" x2="395" y2="430"/>
+  <text class="small" x="405" y="338">22 mm socket depth</text>
+
+  <text class="small" x="105" y="700">Socket: 13.2 mm diameter for a 12.7 mm dowel plus 0.5 mm clearance</text>
+
+  <rect class="panel" x="640" y="130" width="500" height="560" rx="8"/>
+  <text class="subtitle" x="680" y="180">Fit at handle end</text>
+
+  <rect class="dowel" x="770" y="363" width="310" height="54" rx="18"/>
+  <ellipse class="dowel" cx="1080" cy="390" rx="14" ry="27"/>
+  <line class="axis" x1="710" y1="390" x2="1110" y2="390"/>
+
+  <ellipse class="cap" cx="755" cy="390" rx="34" ry="92"/>
+  <rect class="cap" x="755" y="298" width="115" height="184"/>
+  <ellipse class="cap" cx="870" cy="390" rx="34" ry="92"/>
+  <ellipse class="cap-cut" cx="870" cy="390" rx="14" ry="38"/>
+  <rect class="dowel" x="770" y="363" width="100" height="54" rx="18"/>
+
+  <path class="callout" d="M 785 298 C 760 255, 720 235, 680 240"/>
+  <text class="label" x="680" y="225">Item 4: TPU knob cap</text>
+  <text class="small" x="680" y="250">blind socket receives dowel end</text>
+
+  <path class="callout" d="M 990 390 C 1030 330, 1065 305, 1100 315"/>
+  <text class="label" x="985" y="295">Dowel rod</text>
+  <text class="small" x="985" y="320">1/2 inch = 12.7 mm</text>
+
+  <path class="callout" d="M 760 482 C 740 535, 710 570, 675 585"/>
+  <text class="label" x="675" y="610">Impact bumper</text>
+  <text class="small" x="675" y="635">closed end protects the rod</text>
+</svg>
