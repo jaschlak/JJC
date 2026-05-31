@@ -4,6 +4,10 @@
 
 The dowel centering ring keeps the dowel rod aligned with the center axis of the JJC V1 juggling club body. It is the first printed test part for Jordan's Juggle Clubs.
 
+Design status note:
+
+Parts 6 and 7 now include built-in dowel sleeves and internal bulkheads, so they do not require this separate centering ring. Item 2 remains useful as a dowel-fit test part and may still be used later as an optional spacer or alignment part.
+
 Reference diagram:
 
 ```text

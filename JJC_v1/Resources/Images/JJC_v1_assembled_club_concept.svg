@@ -14,7 +14,6 @@
       .handle { fill: #7cc4b8; stroke: #1f6f68; stroke-width: 4; }
       .collar { fill: #d89562; stroke: #7a431b; stroke-width: 4; }
       .body { fill: #d7ece8; stroke: #1f6f68; stroke-width: 4; }
-      .ring { fill: #f1c75b; stroke: #8b6515; stroke-width: 3; }
       .nose { fill: #9db58f; stroke: #4a6c3c; stroke-width: 4; }
       .axis { stroke: #50585c; stroke-width: 2; stroke-dasharray: 14 10; }
       .callout { stroke: #202426; stroke-width: 2; fill: none; }
@@ -49,9 +48,6 @@
                          C 1060 550, 790 580, 635 520
                          C 685 455, 685 365, 635 300 Z"/>
 
-  <ellipse class="ring" cx="750" cy="410" rx="32" ry="84"/>
-  <ellipse class="ring" cx="960" cy="410" rx="42" ry="112"/>
-
   <ellipse class="nose" cx="1195" cy="410" rx="42" ry="72"/>
 
   <path class="callout" d="M 205 330 C 175 255, 130 225, 80 220"/>
@@ -66,9 +62,9 @@
   <text class="label" x="760" y="195">Item 5: Body-to-handle collar</text>
   <text class="small" x="760" y="220">transition into body shell</text>
 
-  <path class="callout" d="M 750 494 C 730 585, 675 625, 600 635"/>
-  <text class="label" x="410" y="650">Item 2: Dowel centering rings</text>
-  <text class="small" x="410" y="675">keep the spine centered inside body</text>
+  <path class="callout" d="M 835 505 C 785 585, 720 625, 620 635"/>
+  <text class="label" x="410" y="650">Built-in dowel sleeves</text>
+  <text class="small" x="410" y="675">Items 6-7 support the spine directly</text>
 
   <path class="callout" d="M 960 298 C 1005 210, 1080 165, 1170 170"/>
   <text class="label" x="1170" y="160">Items 6-8: Future body and nose parts</text>

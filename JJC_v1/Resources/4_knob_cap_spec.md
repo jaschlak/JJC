@@ -65,7 +65,7 @@ Recommended first print orientation:
 closed end on the bed, socket opening upward
 ```
 
-This keeps the visible outside simple and avoids needing support inside the dowel socket.
+This keeps the solid closed end on the XY plane and leaves the dowel socket opening upward.
 
 ## First Test Goals
 

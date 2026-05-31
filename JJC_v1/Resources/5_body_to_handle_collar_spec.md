@@ -26,8 +26,8 @@ Suggested starting dimensions:
 
 | Feature | Value | Notes |
 | --- | ---: | --- |
-| Lower outer diameter | 24 mm | Matches the first handle sleeve outer diameter |
-| Upper outer diameter | 42 mm | First estimate for the lower club body transition |
+| Handle-side outer diameter | 24 mm | Matches the first handle sleeve outer diameter |
+| Body-side outer diameter | 42 mm | First estimate for the lower club body transition; starts on the XY plane |
 | Inner diameter | 13.2 mm | 12.7 mm dowel plus 0.5 mm clearance |
 | Height | 35 mm | Short enough for a fast test print |
 | Edge treatment | 0.75 mm chamfer | Reduces sharp TPU edges |
@@ -44,17 +44,17 @@ inner diameter = 13.2 mm
 
 ## Fit To Nearby Parts
 
-The lower diameter should align with the handle sleeve:
+The handle-side diameter should align with the handle sleeve:
 
 ```text
 handle sleeve outer diameter = 24 mm
-collar lower outer diameter = 24 mm
+collar handle-side outer diameter = 24 mm
 ```
 
-The upper diameter is a placeholder for the future lower body shell:
+The body-side diameter is a placeholder for the future lower body shell:
 
 ```text
-collar upper outer diameter = 42 mm
+collar body-side outer diameter = 42 mm
 ```
 
 This can be adjusted after the first body shell dimensions are chosen.
@@ -78,7 +78,7 @@ Reasons:
 Recommended first print orientation:
 
 ```text
-standing vertically with the wider end on the bed
+standing vertically with the wider 42 mm body side on the bed
 ```
 
 Benefits:
@@ -102,8 +102,8 @@ The first print should answer:
 Use named variables in the script:
 
 ```python
-lower_outer_diameter_mm = 24.0
-upper_outer_diameter_mm = 42.0
+handle_side_outer_diameter_mm = 24.0
+body_side_outer_diameter_mm = 42.0
 dowel_diameter_mm = 12.7
 dowel_clearance_mm = 0.5
 collar_height_mm = 35.0

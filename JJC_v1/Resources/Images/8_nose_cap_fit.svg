@@ -1,0 +1,76 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="760" viewBox="0 0 1200 760">
+  <title>JJC V1 nose cap fit diagram</title>
+  <desc>Diagram showing the nose cap as a TPU end cap with a blind socket for the dowel rod.</desc>
+
+  <defs>
+    <style>
+      .bg { fill: #f7f7f2; }
+      .panel { fill: #ffffff; stroke: #2f3437; stroke-width: 2; }
+      .title { font: 700 34px Arial, sans-serif; fill: #202426; }
+      .subtitle { font: 600 24px Arial, sans-serif; fill: #202426; }
+      .label { font: 20px Arial, sans-serif; fill: #202426; }
+      .small { font: 16px Arial, sans-serif; fill: #4b5357; }
+      .cap { fill: #9db58f; stroke: #4a6c3c; stroke-width: 4; }
+      .cap-cut { fill: #ffffff; stroke: #4a6c3c; stroke-width: 4; }
+      .shell { fill: #cfe3f2; stroke: #2e5f89; stroke-width: 4; }
+      .dowel { fill: #b98554; stroke: #68401f; stroke-width: 4; }
+      .axis { stroke: #50585c; stroke-width: 2; stroke-dasharray: 12 10; }
+      .dim { stroke: #202426; stroke-width: 2; marker-start: url(#arrow); marker-end: url(#arrow); }
+      .callout { stroke: #202426; stroke-width: 2; fill: none; }
+    </style>
+    <marker id="arrow" markerWidth="10" markerHeight="10" refX="5" refY="5" orient="auto-start-reverse">
+      <path d="M 0 0 L 10 5 L 0 10 z" fill="#202426"/>
+    </marker>
+  </defs>
+
+  <rect class="bg" x="0" y="0" width="1200" height="760"/>
+  <text class="title" x="60" y="64">JJC V1 - Item 8 - Nose Cap</text>
+  <text class="small" x="60" y="96">Purpose: protect the top dowel end and close the club nose.</text>
+
+  <rect class="panel" x="60" y="130" width="500" height="560" rx="8"/>
+  <text class="subtitle" x="100" y="180">Part: blind socket cap</text>
+
+  <ellipse class="cap" cx="310" cy="260" rx="125" ry="36"/>
+  <rect class="cap" x="185" y="260" width="250" height="250"/>
+  <ellipse class="cap" cx="310" cy="510" rx="125" ry="36"/>
+  <ellipse class="cap-cut" cx="310" cy="260" rx="52" ry="15"/>
+  <rect class="cap-cut" x="258" y="260" width="104" height="178"/>
+  <ellipse class="cap-cut" cx="310" cy="438" rx="52" ry="15"/>
+  <line class="axis" x1="310" y1="205" x2="310" y2="565"/>
+
+  <line class="dim" x1="185" y1="615" x2="435" y2="615"/>
+  <text class="label" x="220" y="650">32 mm outer diameter</text>
+
+  <line class="dim" x1="485" y1="260" x2="485" y2="510"/>
+  <text class="label" x="505" y="380">30 mm</text>
+  <text class="label" x="505" y="405">height</text>
+
+  <text class="small" x="105" y="705">Socket: 13.2 mm diameter, 22 mm deep, 8 mm closed end</text>
+
+  <rect class="panel" x="640" y="130" width="500" height="560" rx="8"/>
+  <text class="subtitle" x="680" y="180">Fit at club nose</text>
+
+  <rect class="dowel" x="888" y="220" width="34" height="410" rx="10"/>
+  <line class="axis" x1="905" y1="195" x2="905" y2="655"/>
+
+  <ellipse class="cap" cx="905" cy="245" rx="58" ry="70"/>
+  <rect class="cap" x="847" y="245" width="116" height="85"/>
+  <ellipse class="cap" cx="905" cy="330" rx="58" ry="22"/>
+  <ellipse class="cap-cut" cx="905" cy="330" rx="22" ry="8"/>
+
+  <path class="shell" d="M 790 330 L 1020 330 L 950 560 L 860 560 Z"/>
+  <ellipse class="shell" cx="905" cy="330" rx="115" ry="28"/>
+  <ellipse class="shell" cx="905" cy="560" rx="45" ry="14"/>
+
+  <path class="callout" d="M 850 245 C 790 225, 725 220, 680 245"/>
+  <text class="label" x="680" y="225">Item 8: Nose cap</text>
+  <text class="small" x="680" y="250">blind socket receives dowel end</text>
+
+  <path class="callout" d="M 985 420 C 1040 425, 1080 455, 1100 505"/>
+  <text class="label" x="985" y="530">Item 7: Upper shell</text>
+  <text class="small" x="985" y="555">32 mm nose-side end</text>
+
+  <path class="callout" d="M 922 240 C 1000 205, 1060 205, 1105 240"/>
+  <text class="label" x="1000" y="255">Dowel rod</text>
+  <text class="small" x="1000" y="280">1/2 inch = 12.7 mm</text>
+</svg>
