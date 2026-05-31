@@ -1,0 +1,80 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1400" height="820" viewBox="0 0 1400 820">
+  <title>JJC V1 assembled club concept</title>
+  <desc>Concept diagram showing the JJC V1 juggling club assembled around a central dowel rod.</desc>
+
+  <defs>
+    <style>
+      .bg { fill: #f7f7f2; }
+      .title { font: 700 38px Arial, sans-serif; fill: #202426; }
+      .subtitle { font: 18px Arial, sans-serif; fill: #4b5357; }
+      .label { font: 20px Arial, sans-serif; fill: #202426; }
+      .small { font: 16px Arial, sans-serif; fill: #4b5357; }
+      .dowel { fill: #b98554; stroke: #68401f; stroke-width: 4; }
+      .knob { fill: #86a6d9; stroke: #274d85; stroke-width: 4; }
+      .handle { fill: #7cc4b8; stroke: #1f6f68; stroke-width: 4; }
+      .collar { fill: #d89562; stroke: #7a431b; stroke-width: 4; }
+      .body { fill: #d7ece8; stroke: #1f6f68; stroke-width: 4; }
+      .ring { fill: #f1c75b; stroke: #8b6515; stroke-width: 3; }
+      .nose { fill: #9db58f; stroke: #4a6c3c; stroke-width: 4; }
+      .axis { stroke: #50585c; stroke-width: 2; stroke-dasharray: 14 10; }
+      .callout { stroke: #202426; stroke-width: 2; fill: none; }
+    </style>
+  </defs>
+
+  <rect class="bg" width="1400" height="820"/>
+  <text class="title" x="70" y="70">JJC V1 - Assembled Club Concept</text>
+  <text class="subtitle" x="70" y="102">Non-electronic first version: printed TPU-style parts built around a rigid 1/2 inch dowel spine.</text>
+
+  <line class="axis" x1="125" y1="410" x2="1275" y2="410"/>
+
+  <rect class="dowel" x="190" y="391" width="980" height="38" rx="16"/>
+  <ellipse class="dowel" cx="190" cy="410" rx="12" ry="19"/>
+  <ellipse class="dowel" cx="1170" cy="410" rx="12" ry="19"/>
+
+  <ellipse class="knob" cx="205" cy="410" rx="42" ry="80"/>
+  <rect class="knob" x="205" y="330" width="70" height="160"/>
+  <ellipse class="knob" cx="275" cy="410" rx="30" ry="80"/>
+
+  <rect class="handle" x="275" y="350" width="250" height="120"/>
+  <ellipse class="handle" cx="275" cy="410" rx="28" ry="60"/>
+  <ellipse class="handle" cx="525" cy="410" rx="28" ry="60"/>
+
+  <path class="collar" d="M 525 350 L 600 320 L 680 500 L 525 470 Z"/>
+  <ellipse class="collar" cx="525" cy="410" rx="28" ry="60"/>
+  <ellipse class="collar" cx="640" cy="410" rx="45" ry="91"/>
+
+  <path class="body" d="M 635 300
+                         C 790 240, 1060 270, 1195 375
+                         C 1230 402, 1230 418, 1195 445
+                         C 1060 550, 790 580, 635 520
+                         C 685 455, 685 365, 635 300 Z"/>
+
+  <ellipse class="ring" cx="750" cy="410" rx="32" ry="84"/>
+  <ellipse class="ring" cx="960" cy="410" rx="42" ry="112"/>
+
+  <ellipse class="nose" cx="1195" cy="410" rx="42" ry="72"/>
+
+  <path class="callout" d="M 205 330 C 175 255, 130 225, 80 220"/>
+  <text class="label" x="80" y="205">Item 4: Knob cap</text>
+  <text class="small" x="80" y="230">protects handle end</text>
+
+  <path class="callout" d="M 405 350 C 390 275, 415 230, 470 210"/>
+  <text class="label" x="470" y="195">Item 3: Handle sleeve</text>
+  <text class="small" x="470" y="220">main grip around dowel</text>
+
+  <path class="callout" d="M 625 320 C 650 250, 700 215, 760 210"/>
+  <text class="label" x="760" y="195">Item 5: Body-to-handle collar</text>
+  <text class="small" x="760" y="220">transition into body shell</text>
+
+  <path class="callout" d="M 750 494 C 730 585, 675 625, 600 635"/>
+  <text class="label" x="410" y="650">Item 2: Dowel centering rings</text>
+  <text class="small" x="410" y="675">keep the spine centered inside body</text>
+
+  <path class="callout" d="M 960 298 C 1005 210, 1080 165, 1170 170"/>
+  <text class="label" x="1170" y="160">Items 6-8: Future body and nose parts</text>
+  <text class="small" x="1170" y="185">not designed yet</text>
+
+  <path class="callout" d="M 640 410 C 670 625, 770 700, 905 710"/>
+  <text class="label" x="905" y="705">Item 1: Dowel rod</text>
+  <text class="small" x="905" y="730">1/2 inch = 12.7 mm</text>
+</svg>

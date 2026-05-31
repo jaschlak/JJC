@@ -1,0 +1,74 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1400" height="820" viewBox="0 0 1400 820">
+  <title>JJC V1 exploded parts view</title>
+  <desc>Exploded view showing the JJC V1 club parts lined up along the dowel rod axis.</desc>
+
+  <defs>
+    <style>
+      .bg { fill: #f7f7f2; }
+      .title { font: 700 38px Arial, sans-serif; fill: #202426; }
+      .subtitle { font: 18px Arial, sans-serif; fill: #4b5357; }
+      .label { font: 20px Arial, sans-serif; fill: #202426; }
+      .small { font: 16px Arial, sans-serif; fill: #4b5357; }
+      .dowel { fill: #b98554; stroke: #68401f; stroke-width: 4; }
+      .knob { fill: #86a6d9; stroke: #274d85; stroke-width: 4; }
+      .handle { fill: #7cc4b8; stroke: #1f6f68; stroke-width: 4; }
+      .collar { fill: #d89562; stroke: #7a431b; stroke-width: 4; }
+      .body { fill: #d7ece8; stroke: #1f6f68; stroke-width: 4; }
+      .ring { fill: #f1c75b; stroke: #8b6515; stroke-width: 4; }
+      .nose { fill: #9db58f; stroke: #4a6c3c; stroke-width: 4; }
+      .ghost { fill: #ffffff; stroke: #9aa2a6; stroke-width: 3; stroke-dasharray: 9 7; }
+      .axis { stroke: #50585c; stroke-width: 2; stroke-dasharray: 14 10; }
+      .gap { stroke: #9aa2a6; stroke-width: 2; stroke-dasharray: 8 8; }
+    </style>
+  </defs>
+
+  <rect class="bg" width="1400" height="820"/>
+  <text class="title" x="70" y="70">JJC V1 - Exploded Parts View</text>
+  <text class="subtitle" x="70" y="102">The parts are spread out along the club axis to show assembly order.</text>
+
+  <line class="axis" x1="90" y1="405" x2="1310" y2="405"/>
+
+  <rect class="dowel" x="165" y="387" width="1050" height="36" rx="15"/>
+  <text class="label" x="555" y="465">Item 1: Dowel rod</text>
+  <text class="small" x="580" y="490">rigid center spine</text>
+
+  <ellipse class="knob" cx="160" cy="405" rx="38" ry="76"/>
+  <rect class="knob" x="160" y="329" width="55" height="152"/>
+  <ellipse class="knob" cx="215" cy="405" rx="24" ry="76"/>
+  <text class="label" x="95" y="560">Item 4</text>
+  <text class="small" x="78" y="585">Knob cap</text>
+
+  <rect class="handle" x="310" y="350" width="185" height="110"/>
+  <ellipse class="handle" cx="310" cy="405" rx="25" ry="55"/>
+  <ellipse class="handle" cx="495" cy="405" rx="25" ry="55"/>
+  <text class="label" x="350" y="560">Item 3</text>
+  <text class="small" x="323" y="585">Handle sleeve</text>
+
+  <path class="collar" d="M 590 350 L 640 325 L 705 485 L 590 460 Z"/>
+  <ellipse class="collar" cx="590" cy="405" rx="24" ry="55"/>
+  <ellipse class="collar" cx="675" cy="405" rx="32" ry="80"/>
+  <text class="label" x="610" y="560">Item 5</text>
+  <text class="small" x="565" y="585">Body-to-handle collar</text>
+
+  <ellipse class="ring" cx="805" cy="405" rx="28" ry="75"/>
+  <ellipse class="ghost" cx="805" cy="405" rx="12" ry="32"/>
+  <text class="label" x="770" y="560">Item 2</text>
+  <text class="small" x="735" y="585">Centering ring</text>
+
+  <path class="body" d="M 900 315 C 1015 275, 1135 300, 1205 365
+                         C 1245 405, 1245 405, 1205 445
+                         C 1135 510, 1015 535, 900 495
+                         C 925 445, 925 365, 900 315 Z"/>
+  <text class="label" x="1000" y="560">Items 6-7</text>
+  <text class="small" x="982" y="585">Future body shells</text>
+
+  <ellipse class="nose" cx="1285" cy="405" rx="36" ry="66"/>
+  <text class="label" x="1245" y="560">Item 8</text>
+  <text class="small" x="1230" y="585">Nose cap</text>
+
+  <line class="gap" x1="245" y1="280" x2="245" y2="640"/>
+  <line class="gap" x1="535" y1="280" x2="535" y2="640"/>
+  <line class="gap" x1="735" y1="280" x2="735" y2="640"/>
+  <line class="gap" x1="855" y1="280" x2="855" y2="640"/>
+  <line class="gap" x1="1235" y1="280" x2="1235" y2="640"/>
+</svg>
