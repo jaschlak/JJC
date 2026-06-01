@@ -14,9 +14,11 @@
       .handle { fill: #7cc4b8; stroke: #1f6f68; stroke-width: 4; }
       .collar { fill: #d89562; stroke: #7a431b; stroke-width: 4; }
       .body { fill: #d7ece8; stroke: #1f6f68; stroke-width: 4; }
+      .upper-body { fill: #cfe3f2; stroke: #2e5f89; stroke-width: 4; }
       .nose { fill: #9db58f; stroke: #4a6c3c; stroke-width: 4; }
       .axis { stroke: #50585c; stroke-width: 2; stroke-dasharray: 14 10; }
       .callout { stroke: #202426; stroke-width: 2; fill: none; }
+      .joint { stroke: #202426; stroke-width: 3; stroke-dasharray: 8 6; }
     </style>
   </defs>
 
@@ -43,12 +45,22 @@
   <ellipse class="collar" cx="640" cy="410" rx="45" ry="91"/>
 
   <path class="body" d="M 635 300
-                         C 790 240, 1060 270, 1195 375
-                         C 1230 402, 1230 418, 1195 445
-                         C 1060 550, 790 580, 635 520
+                         C 710 270, 800 255, 900 275
+                         C 930 320, 945 365, 945 410
+                         C 945 455, 930 500, 900 545
+                         C 800 565, 710 550, 635 520
                          C 685 455, 685 365, 635 300 Z"/>
 
+  <path class="upper-body" d="M 900 275
+                              C 1015 295, 1125 335, 1195 375
+                              C 1230 402, 1230 418, 1195 445
+                              C 1125 485, 1015 525, 900 545
+                              C 930 500, 945 455, 945 410
+                              C 945 365, 930 320, 900 275 Z"/>
+
   <ellipse class="nose" cx="1195" cy="410" rx="42" ry="72"/>
+  <line class="joint" x1="900" y1="275" x2="900" y2="545"/>
+  <line class="joint" x1="1195" y1="338" x2="1195" y2="482"/>
 
   <path class="callout" d="M 205 330 C 175 255, 130 225, 80 220"/>
   <text class="label" x="80" y="205">Item 4: Knob cap</text>
@@ -62,13 +74,20 @@
   <text class="label" x="760" y="195">Item 5: Body-to-handle collar</text>
   <text class="small" x="760" y="220">transition into body shell</text>
 
-  <path class="callout" d="M 835 505 C 785 585, 720 625, 620 635"/>
+  <path class="callout" d="M 785 510 C 735 585, 680 625, 620 635"/>
   <text class="label" x="410" y="650">Built-in dowel sleeves</text>
-  <text class="small" x="410" y="675">Items 6-7 support the spine directly</text>
+  <text class="small" x="410" y="675">lower and upper shells support the spine directly</text>
 
-  <path class="callout" d="M 960 298 C 1005 210, 1080 165, 1170 170"/>
-  <text class="label" x="1170" y="160">Items 6-8: Future body and nose parts</text>
-  <text class="small" x="1170" y="185">not designed yet</text>
+  <path class="callout" d="M 760 292 C 790 220, 835 165, 910 150"/>
+  <text class="label" x="910" y="145">Item 6: Lower body shell</text>
+  <text class="small" x="910" y="170">separate printed shell section</text>
+
+  <path class="callout" d="M 1040 305 C 1065 235, 1110 205, 1180 205"/>
+  <text class="label" x="1180" y="200">Item 7: Upper body shell</text>
+  <text class="small" x="1180" y="225">separate printed shell section</text>
+
+  <path class="callout" d="M 1220 375 C 1260 330, 1300 310, 1340 320"/>
+  <text class="label" x="1235" y="300">Item 8: Nose cap</text>
 
   <path class="callout" d="M 640 410 C 670 625, 770 700, 905 710"/>
   <text class="label" x="905" y="705">Item 1: Dowel rod</text>

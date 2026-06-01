@@ -14,6 +14,7 @@
       .handle { fill: #7cc4b8; stroke: #1f6f68; stroke-width: 4; }
       .collar { fill: #d89562; stroke: #7a431b; stroke-width: 4; }
       .body { fill: #d7ece8; stroke: #1f6f68; stroke-width: 4; }
+      .upper-body { fill: #cfe3f2; stroke: #2e5f89; stroke-width: 4; }
       .nose { fill: #9db58f; stroke: #4a6c3c; stroke-width: 4; }
       .ghost { fill: #ffffff; stroke: #9aa2a6; stroke-width: 3; stroke-dasharray: 9 7; }
       .axis { stroke: #50585c; stroke-width: 2; stroke-dasharray: 14 10; }
@@ -49,20 +50,27 @@
   <text class="label" x="610" y="560">Item 5</text>
   <text class="small" x="565" y="585">Body-to-handle collar</text>
 
-  <path class="body" d="M 820 315 C 970 275, 1135 300, 1205 365
-                         C 1245 405, 1245 405, 1205 445
-                         C 1135 510, 970 535, 820 495
-                         C 850 445, 850 365, 820 315 Z"/>
-  <rect class="dowel" x="1015" y="350" width="34" height="110" rx="8"/>
-  <text class="label" x="965" y="560">Items 6-7</text>
-  <text class="small" x="900" y="585">Body shells with built-in sleeves</text>
+  <path class="body" d="M 790 325 C 845 300, 920 295, 980 330
+                         C 1005 365, 1005 445, 980 480
+                         C 920 515, 845 510, 790 485
+                         C 820 440, 820 370, 790 325 Z"/>
+  <text class="label" x="845" y="560">Item 6</text>
+  <text class="small" x="795" y="585">Lower body shell</text>
 
-  <ellipse class="nose" cx="1285" cy="405" rx="36" ry="66"/>
-  <text class="label" x="1245" y="560">Item 8</text>
-  <text class="small" x="1230" y="585">Nose cap</text>
+  <path class="upper-body" d="M 1050 330 C 1125 300, 1195 315, 1245 365
+                              C 1280 405, 1280 405, 1245 445
+                              C 1195 495, 1125 510, 1050 480
+                              C 1075 445, 1075 365, 1050 330 Z"/>
+  <text class="label" x="1110" y="560">Item 7</text>
+  <text class="small" x="1060" y="585">Upper body shell</text>
+
+  <ellipse class="nose" cx="1340" cy="405" rx="36" ry="66"/>
+  <text class="label" x="1302" y="560">Item 8</text>
+  <text class="small" x="1288" y="585">Nose cap</text>
 
   <line class="gap" x1="245" y1="280" x2="245" y2="640"/>
   <line class="gap" x1="535" y1="280" x2="535" y2="640"/>
   <line class="gap" x1="760" y1="280" x2="760" y2="640"/>
-  <line class="gap" x1="1235" y1="280" x2="1235" y2="640"/>
+  <line class="gap" x1="1015" y1="280" x2="1015" y2="640"/>
+  <line class="gap" x1="1295" y1="280" x2="1295" y2="640"/>
 </svg>

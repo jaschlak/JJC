@@ -1,0 +1,113 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1400" height="820" viewBox="0 0 1400 820">
+  <title>JJC V1 items 6, 7, and 8 separated body parts</title>
+  <desc>Separate visual reference for the lower body shell, upper body shell, and nose cap.</desc>
+
+  <defs>
+    <style>
+      .bg { fill: #f7f7f2; }
+      .panel { fill: #ffffff; stroke: #2f3437; stroke-width: 2; }
+      .title { font: 700 38px Arial, sans-serif; fill: #202426; }
+      .subtitle { font: 18px Arial, sans-serif; fill: #4b5357; }
+      .part-title { font: 700 24px Arial, sans-serif; fill: #202426; }
+      .label { font: 19px Arial, sans-serif; fill: #202426; }
+      .small { font: 16px Arial, sans-serif; fill: #4b5357; }
+      .shell6 { fill: #d7ece8; stroke: #1f6f68; stroke-width: 4; }
+      .shell7 { fill: #cfe3f2; stroke: #2e5f89; stroke-width: 4; }
+      .cap8 { fill: #9db58f; stroke: #4a6c3c; stroke-width: 4; }
+      .void { fill: #ffffff; stroke: #7b858a; stroke-width: 3; }
+      .sleeve { fill: #f1c75b; stroke: #8b6515; stroke-width: 4; }
+      .dowel { fill: #b98554; stroke: #68401f; stroke-width: 4; }
+      .axis { stroke: #50585c; stroke-width: 2; stroke-dasharray: 12 10; }
+      .dim { stroke: #202426; stroke-width: 2; marker-start: url(#arrow); marker-end: url(#arrow); }
+      .note { fill: #fff8dc; stroke: #8b6515; stroke-width: 2; }
+    </style>
+    <marker id="arrow" markerWidth="10" markerHeight="10" refX="5" refY="5" orient="auto-start-reverse">
+      <path d="M 0 0 L 10 5 L 0 10 z" fill="#202426"/>
+    </marker>
+  </defs>
+
+  <rect class="bg" width="1400" height="820"/>
+  <text class="title" x="70" y="70">JJC V1 - Items 6, 7, and 8 Separated</text>
+  <text class="subtitle" x="70" y="102">The full body is three separate printed parts: lower shell, upper shell, and nose cap.</text>
+
+  <rect class="panel" x="55" y="145" width="400" height="570" rx="8"/>
+  <text class="part-title" x="85" y="190">Item 6: Lower Body Shell</text>
+  <text class="small" x="85" y="218">120 mm tall, 58 mm wide end to 42 mm collar end</text>
+
+  <line class="axis" x1="255" y1="250" x2="255" y2="610"/>
+  <path class="shell6" d="M 130 285 L 380 285 L 320 575 L 190 575 Z"/>
+  <ellipse class="shell6" cx="255" cy="285" rx="125" ry="34"/>
+  <ellipse class="shell6" cx="255" cy="575" rx="65" ry="19"/>
+  <path class="void" d="M 148 286 L 362 286 L 308 575 L 202 575 Z"/>
+  <ellipse class="void" cx="255" cy="286" rx="107" ry="28"/>
+  <ellipse class="void" cx="255" cy="575" rx="53" ry="14"/>
+  <rect class="dowel" x="239" y="285" width="32" height="290"/>
+  <rect class="sleeve" x="232" y="285" width="46" height="290"/>
+  <ellipse class="sleeve" cx="255" cy="285" rx="23" ry="7"/>
+  <ellipse class="sleeve" cx="255" cy="575" rx="23" ry="7"/>
+  <ellipse class="dowel" cx="255" cy="285" rx="15" ry="5"/>
+  <ellipse class="dowel" cx="255" cy="575" rx="15" ry="5"/>
+  <rect class="sleeve" x="148" y="285" width="214" height="20"/>
+  <ellipse class="sleeve" cx="255" cy="305" rx="107" ry="28"/>
+  <ellipse class="void" cx="255" cy="305" rx="34" ry="9"/>
+  <rect class="sleeve" x="202" y="555" width="106" height="20"/>
+  <ellipse class="sleeve" cx="255" cy="575" rx="53" ry="14"/>
+  <ellipse class="void" cx="255" cy="575" rx="34" ry="9"/>
+
+  <line class="dim" x1="130" y1="645" x2="380" y2="645"/>
+  <text class="label" x="170" y="675">58 mm wide end</text>
+  <line class="dim" x1="190" y1="248" x2="320" y2="248"/>
+  <text class="label" x="167" y="239">42 mm collar end</text>
+
+  <rect class="panel" x="500" y="145" width="400" height="570" rx="8"/>
+  <text class="part-title" x="530" y="190">Item 7: Upper Body Shell</text>
+  <text class="small" x="530" y="218">120 mm tall, 58 mm wide end to 32 mm nose end</text>
+
+  <line class="axis" x1="700" y1="250" x2="700" y2="610"/>
+  <path class="shell7" d="M 575 285 L 825 285 L 740 575 L 660 575 Z"/>
+  <ellipse class="shell7" cx="700" cy="285" rx="125" ry="34"/>
+  <ellipse class="shell7" cx="700" cy="575" rx="40" ry="13"/>
+  <path class="void" d="M 593 286 L 807 286 L 730 575 L 670 575 Z"/>
+  <ellipse class="void" cx="700" cy="286" rx="107" ry="28"/>
+  <ellipse class="void" cx="700" cy="575" rx="30" ry="9"/>
+  <rect class="dowel" x="684" y="285" width="32" height="290"/>
+  <rect class="sleeve" x="677" y="285" width="46" height="290"/>
+  <ellipse class="sleeve" cx="700" cy="285" rx="23" ry="7"/>
+  <ellipse class="sleeve" cx="700" cy="575" rx="23" ry="7"/>
+  <ellipse class="dowel" cx="700" cy="285" rx="15" ry="5"/>
+  <ellipse class="dowel" cx="700" cy="575" rx="15" ry="5"/>
+  <rect class="sleeve" x="593" y="285" width="214" height="20"/>
+  <ellipse class="sleeve" cx="700" cy="305" rx="107" ry="28"/>
+  <ellipse class="void" cx="700" cy="305" rx="34" ry="9"/>
+  <rect class="sleeve" x="670" y="555" width="60" height="20"/>
+  <ellipse class="sleeve" cx="700" cy="575" rx="30" ry="9"/>
+  <ellipse class="void" cx="700" cy="575" rx="20" ry="6"/>
+
+  <line class="dim" x1="575" y1="645" x2="825" y2="645"/>
+  <text class="label" x="615" y="675">58 mm wide end</text>
+  <line class="dim" x1="660" y1="248" x2="740" y2="248"/>
+  <text class="label" x="622" y="239">32 mm nose end</text>
+
+  <rect class="panel" x="945" y="145" width="400" height="570" rx="8"/>
+  <text class="part-title" x="975" y="190">Item 8: Nose Cap</text>
+  <text class="small" x="975" y="218">30 mm tall cap with blind 13.2 mm dowel socket</text>
+
+  <line class="axis" x1="1145" y1="305" x2="1145" y2="560"/>
+  <ellipse class="cap8" cx="1145" cy="320" rx="100" ry="32"/>
+  <rect class="cap8" x="1045" y="320" width="200" height="210"/>
+  <ellipse class="cap8" cx="1145" cy="530" rx="100" ry="32"/>
+  <ellipse class="void" cx="1145" cy="320" rx="42" ry="13"/>
+  <rect class="void" x="1103" y="320" width="84" height="154"/>
+  <ellipse class="void" cx="1145" cy="474" rx="42" ry="13"/>
+  <rect class="dowel" x="1131" y="320" width="28" height="154"/>
+  <ellipse class="dowel" cx="1145" cy="320" rx="14" ry="5"/>
+
+  <line class="dim" x1="1045" y1="645" x2="1245" y2="645"/>
+  <text class="label" x="1062" y="675">32 mm outer diameter</text>
+  <line class="dim" x1="1285" y1="320" x2="1285" y2="530"/>
+  <text class="label" x="1300" y="420">30 mm</text>
+  <text class="small" x="1300" y="444">height</text>
+
+  <rect class="note" x="70" y="735" width="1260" height="52" rx="8"/>
+  <text class="small" x="95" y="767">Note: this drawing separates the conceptual parts. The current Fusion scripts for items 6 and 7 should be checked because their profile selection may create more solid geometry than the intended hollow shell.</text>
+</svg>
