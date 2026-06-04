@@ -32,11 +32,6 @@ def run(_context):
         shell_height_mm = 120.0
         dowel_diameter_mm = 12.7
         dowel_clearance_mm = 0.5
-        dowel_sleeve_outer_diameter_mm = 20.0
-        lower_bulkhead_height_mm = 5.0
-        upper_bulkhead_height_mm = 5.0
-        wide_inner_diameter_mm = wide_outer_diameter_mm - (wall_thickness_mm * 2.0)
-        nose_side_inner_diameter_mm = nose_side_outer_diameter_mm - (wall_thickness_mm * 2.0)
         dowel_hole_diameter_mm = dowel_diameter_mm + dowel_clearance_mm
 
         def select_only(*entities):
@@ -47,17 +42,6 @@ def run(_context):
                     selections.add(entity)
             adsk.doEvents()
 
-        def largest_profile(sketch):
-            largest = None
-            largest_area = -1
-            for index in range(sketch.profiles.count):
-                profile = sketch.profiles.item(index)
-                area = profile.areaProperties().area
-                if area > largest_area:
-                    largest = profile
-                    largest_area = area
-            return largest
-
         def circle_profile(sketch, diameter_mm):
             center = adsk.core.Point3D.create(0, 0, 0)
             sketch.sketchCurves.sketchCircles.addByCenterRadius(
@@ -65,20 +49,6 @@ def run(_context):
                 mm_to_cm(diameter_mm / 2.0)
             )
             return sketch.profiles.item(0)
-
-        def add_joined_extrude(profile, distance_mm, name):
-            extrudes = component.features.extrudeFeatures
-            extrude_input = extrudes.createInput(
-                profile,
-                adsk.fusion.FeatureOperations.JoinFeatureOperation
-            )
-            extrude_input.setDistanceExtent(
-                False,
-                adsk.core.ValueInput.createByReal(mm_to_cm(distance_mm))
-            )
-            extrude = extrudes.add(extrude_input)
-            extrude.name = name
-            return extrude
 
         def add_cut_extrude(profile, distance_mm, name):
             extrudes = component.features.extrudeFeatures
@@ -102,11 +72,7 @@ def run(_context):
             center,
             mm_to_cm(wide_outer_diameter_mm / 2.0)
         )
-        bottom_sketch.sketchCurves.sketchCircles.addByCenterRadius(
-            center,
-            mm_to_cm(wide_inner_diameter_mm / 2.0)
-        )
-        bottom_profile = largest_profile(bottom_sketch)
+        bottom_profile = bottom_sketch.profiles.item(0)
 
         plane_input = component.constructionPlanes.createInput()
         plane_input.setByOffset(
@@ -122,11 +88,7 @@ def run(_context):
             center,
             mm_to_cm(nose_side_outer_diameter_mm / 2.0)
         )
-        top_sketch.sketchCurves.sketchCircles.addByCenterRadius(
-            center,
-            mm_to_cm(nose_side_inner_diameter_mm / 2.0)
-        )
-        top_profile = largest_profile(top_sketch)
+        top_profile = top_sketch.profiles.item(0)
 
         lofts = component.features.loftFeatures
         loft_input = lofts.createInput(
@@ -136,54 +98,10 @@ def run(_context):
         loft_input.loftSections.add(top_profile)
 
         loft = lofts.add(loft_input)
-        loft.name = 'Upper body shell loft'
+        loft.name = 'Upper body infill-ready solid loft'
 
         body = loft.bodies.item(0)
-        body.name = 'Upper body shell'
-
-        sleeve_sketch = component.sketches.add(component.xYConstructionPlane)
-        sleeve_sketch.name = 'Integrated dowel sleeve sketch'
-        sleeve_profile = circle_profile(
-            sleeve_sketch,
-            dowel_sleeve_outer_diameter_mm
-        )
-        add_joined_extrude(
-            sleeve_profile,
-            shell_height_mm,
-            'Integrated dowel sleeve'
-        )
-
-        lower_bulkhead_sketch = component.sketches.add(component.xYConstructionPlane)
-        lower_bulkhead_sketch.name = 'Lower structural bulkhead sketch'
-        lower_bulkhead_profile = circle_profile(
-            lower_bulkhead_sketch,
-            wide_inner_diameter_mm
-        )
-        add_joined_extrude(
-            lower_bulkhead_profile,
-            lower_bulkhead_height_mm,
-            'Lower structural bulkhead'
-        )
-
-        upper_plane_input = component.constructionPlanes.createInput()
-        upper_plane_input.setByOffset(
-            component.xYConstructionPlane,
-            adsk.core.ValueInput.createByReal(mm_to_cm(shell_height_mm - upper_bulkhead_height_mm))
-        )
-        upper_bulkhead_plane = component.constructionPlanes.add(upper_plane_input)
-        upper_bulkhead_plane.name = 'Upper bulkhead start plane'
-
-        upper_bulkhead_sketch = component.sketches.add(upper_bulkhead_plane)
-        upper_bulkhead_sketch.name = 'Upper structural bulkhead sketch'
-        upper_bulkhead_profile = circle_profile(
-            upper_bulkhead_sketch,
-            nose_side_inner_diameter_mm
-        )
-        add_joined_extrude(
-            upper_bulkhead_profile,
-            upper_bulkhead_height_mm,
-            'Upper structural bulkhead'
-        )
+        body.name = 'Upper body infill-ready shell'
 
         dowel_hole_sketch = component.sketches.add(component.xYConstructionPlane)
         dowel_hole_sketch.name = 'Full-length dowel hole cut sketch'
@@ -203,8 +121,9 @@ def run(_context):
             'The wide 58 mm side starts on the XY plane.\n\n'
             f'Wide outer diameter: {wide_outer_diameter_mm} mm\n'
             f'Nose-side outer diameter: {nose_side_outer_diameter_mm} mm\n'
-            f'Wall thickness: {wall_thickness_mm} mm\n'
-            f'Dowel sleeve: {dowel_hole_diameter_mm} mm ID, {dowel_sleeve_outer_diameter_mm} mm OD\n'
+            f'Slicer wall target: {wall_thickness_mm} mm\n'
+            f'Dowel hole: {dowel_hole_diameter_mm} mm through-hole\n'
+            f'Solid body around dowel hole is ready for slicer infill.\n'
             f'Height: {shell_height_mm} mm'
         )
 

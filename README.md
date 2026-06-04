@@ -2,6 +2,8 @@
 
 Jordan's Juggle Clubs V1 is a 3D-printing and Fusion scripting project for designing a simple juggling club around a rigid 1/2 inch dowel rod spine.
 
+V2 is started in `JJC_v2/` as a Delphin-style, dowel-core practice club targeting a 520 mm length and a 200-220 g finished weight.
+
 The current version is intentionally non-electronic. There are no LEDs, microcontrollers, batteries, or diffusers in V1. The goal is to learn the CAD-to-print workflow and build up the club as small, testable parts.
 
 ## Design Direction
@@ -36,9 +38,11 @@ Resources/
   Images/
 
 Fusion/
+  JJCv1_1_dowel_rod/
   JJCv1_2_dowel_centering_ring/
   JJCv1_3_handle_sleeve/
   JJCv1_4_knob cap/
+  JJCv1_9_full_club_assembly/
 ```
 
 ## Current Parts
@@ -50,6 +54,8 @@ The rigid spine of the club.
 ```text
 1/2 inch = 12.7 mm
 ```
+
+There is a Fusion script for creating the dowel rod as its own reference part.
 
 Measure the actual dowel before finalizing printed fit dimensions.
 
@@ -64,6 +70,10 @@ A hollow TPU grip sleeve that slides over the dowel.
 ### 4. Knob Cap
 
 A TPU end cap with a blind socket for the dowel. This forms the rounded handle-end bumper.
+
+### 9. Full Club Assembly
+
+A Fusion assembly script creates the dowel rod, handle sleeve, knob cap, body-to-handle collar, lower body shell, upper body shell, and nose cap as separate components in one design.
 
 ## Fusion Workflow
 

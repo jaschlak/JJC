@@ -1,0 +1,37 @@
+"""Create the JJC V2 handle sleeve."""
+
+import os
+import sys
+import traceback
+import importlib
+import adsk.core
+import adsk.fusion
+
+
+SHARED_DIR = os.path.join(os.path.dirname(os.path.dirname(__file__)), 'JJCv2_shared')
+if SHARED_DIR not in sys.path:
+    sys.path.insert(0, SHARED_DIR)
+
+import jjc_v2_parts  # noqa: E402
+
+jjc_v2_parts = importlib.reload(jjc_v2_parts)
+
+
+def run(_context):
+    global jjc_v2_parts
+    ui = None
+    try:
+        jjc_v2_parts = importlib.reload(jjc_v2_parts)
+        app = adsk.core.Application.get()
+        ui = app.userInterface
+        design = app.activeProduct
+        if not isinstance(design, adsk.fusion.Design):
+            ui.messageBox('No active Fusion design.')
+            return
+        body = jjc_v2_parts.create_handle_sleeve(design.rootComponent)
+        ui.activeSelections.clear()
+        ui.activeSelections.add(body)
+        ui.messageBox('V2 handle sleeve created.')
+    except:
+        if ui:
+            ui.messageBox(f'Failed:\n{traceback.format_exc()}')

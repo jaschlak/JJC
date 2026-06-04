@@ -1,0 +1,81 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1400" height="820" viewBox="0 0 1400 820">
+  <title>JJC V2 Delphin-style club concept</title>
+  <desc>Concept diagram for a 520 mm dowel-core Delphin-style juggling club.</desc>
+
+  <defs>
+    <style>
+      .bg { fill: #f7f7f2; }
+      .title { font: 700 38px Arial, sans-serif; fill: #202426; }
+      .subtitle { font: 18px Arial, sans-serif; fill: #4b5357; }
+      .label { font: 20px Arial, sans-serif; fill: #202426; }
+      .small { font: 16px Arial, sans-serif; fill: #4b5357; }
+      .dowel { fill: #b98554; stroke: #68401f; stroke-width: 4; }
+      .knob { fill: #86a6d9; stroke: #274d85; stroke-width: 4; }
+      .handle { fill: #7cc4b8; stroke: #1f6f68; stroke-width: 4; }
+      .collar { fill: #d89562; stroke: #7a431b; stroke-width: 4; }
+      .lower { fill: #d7ece8; stroke: #1f6f68; stroke-width: 4; }
+      .upper { fill: #cfe3f2; stroke: #2e5f89; stroke-width: 4; }
+      .nose { fill: #9db58f; stroke: #4a6c3c; stroke-width: 4; }
+      .axis { stroke: #50585c; stroke-width: 2; stroke-dasharray: 14 10; }
+      .joint { stroke: #202426; stroke-width: 3; stroke-dasharray: 8 6; }
+      .dim { stroke: #202426; stroke-width: 2; marker-start: url(#arrow); marker-end: url(#arrow); }
+    </style>
+    <marker id="arrow" markerWidth="10" markerHeight="10" refX="5" refY="5" orient="auto-start-reverse">
+      <path d="M 0 0 L 10 5 L 0 10 z" fill="#202426"/>
+    </marker>
+  </defs>
+
+  <rect class="bg" width="1400" height="820"/>
+  <text class="title" x="70" y="70">JJC V2 - Delphin-Style Practice Club</text>
+  <text class="subtitle" x="70" y="102">Original dowel-core club targeting 520 mm length and a 200-220 g finished weight.</text>
+
+  <line class="axis" x1="145" y1="405" x2="1245" y2="405"/>
+  <rect class="dowel" x="150" y="389" width="1090" height="32" rx="14"/>
+
+  <ellipse class="knob" cx="170" cy="405" rx="38" ry="70"/>
+  <rect class="knob" x="170" y="335" width="58" height="140"/>
+  <ellipse class="knob" cx="228" cy="405" rx="24" ry="70"/>
+
+  <rect class="handle" x="228" y="357" width="390" height="96"/>
+  <ellipse class="handle" cx="228" cy="405" rx="24" ry="48"/>
+  <ellipse class="handle" cx="618" cy="405" rx="24" ry="48"/>
+
+  <path class="collar" d="M 618 357 L 658 325 L 692 485 L 618 453 Z"/>
+  <ellipse class="collar" cx="618" cy="405" rx="24" ry="48"/>
+  <ellipse class="collar" cx="692" cy="405" rx="37" ry="80"/>
+
+  <path class="lower" d="M 692 325 C 755 265, 845 245, 930 270
+                         C 965 315, 982 362, 982 405
+                         C 982 448, 965 495, 930 540
+                         C 845 565, 755 545, 692 485 Z"/>
+
+  <path class="upper" d="M 930 270 C 1035 300, 1150 335, 1220 378
+                         C 1250 400, 1250 410, 1220 432
+                         C 1150 475, 1035 510, 930 540
+                         C 965 495, 982 448, 982 405
+                         C 982 362, 965 315, 930 270 Z"/>
+
+  <ellipse class="nose" cx="1220" cy="405" rx="42" ry="68"/>
+
+  <line class="joint" x1="228" y1="330" x2="228" y2="480"/>
+  <line class="joint" x1="618" y1="330" x2="618" y2="480"/>
+  <line class="joint" x1="692" y1="320" x2="692" y2="490"/>
+  <line class="joint" x1="930" y1="270" x2="930" y2="540"/>
+  <line class="joint" x1="1220" y1="337" x2="1220" y2="473"/>
+
+  <line class="dim" x1="150" y1="640" x2="1240" y2="640"/>
+  <text class="label" x="610" y="680">520 mm overall length</text>
+
+  <text class="label" x="110" y="545">Item 2</text>
+  <text class="small" x="95" y="570">knob cap</text>
+  <text class="label" x="375" y="545">Item 3</text>
+  <text class="small" x="342" y="570">185 mm handle</text>
+  <text class="label" x="640" y="545">Item 4</text>
+  <text class="small" x="615" y="570">collar</text>
+  <text class="label" x="780" y="590">Item 5</text>
+  <text class="small" x="722" y="615">lower body shell</text>
+  <text class="label" x="1060" y="590">Item 6</text>
+  <text class="small" x="1004" y="615">upper body shell</text>
+  <text class="label" x="1240" y="545">Item 7</text>
+  <text class="small" x="1220" y="570">nose cap</text>
+</svg>
