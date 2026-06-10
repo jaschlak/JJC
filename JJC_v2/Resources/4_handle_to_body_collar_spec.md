@@ -4,6 +4,12 @@
 
 The collar transitions from the slim handle to the body shell.
 
+Reference diagram:
+
+```text
+Resources/Images/4_handle_to_body_collar_fit.svg
+```
+
 ## Geometry
 
 ```text

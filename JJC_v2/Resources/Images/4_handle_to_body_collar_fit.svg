@@ -1,0 +1,48 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="760" viewBox="0 0 1200 760">
+  <title>JJC V2 handle-to-body collar fit diagram</title>
+  <desc>Diagram showing the tapered collar between the handle sleeve and lower body shell.</desc>
+  <defs>
+    <style>
+      .bg { fill: #f7f7f2; }
+      .panel { fill: #ffffff; stroke: #2f3437; stroke-width: 2; }
+      .title { font: 700 34px Arial, sans-serif; fill: #202426; }
+      .subtitle { font: 600 24px Arial, sans-serif; fill: #202426; }
+      .label { font: 20px Arial, sans-serif; fill: #202426; }
+      .small { font: 16px Arial, sans-serif; fill: #4b5357; }
+      .collar { fill: #d89562; stroke: #7a431b; stroke-width: 4; }
+      .handle { fill: #7cc4b8; stroke: #1f6f68; stroke-width: 3; opacity: 0.75; }
+      .body { fill: #d7ece8; stroke: #1f6f68; stroke-width: 3; opacity: 0.75; }
+      .cut { fill: #ffffff; stroke: #7a431b; stroke-width: 3; }
+      .dowel { fill: #b98554; stroke: #68401f; stroke-width: 4; }
+      .axis { stroke: #50585c; stroke-width: 2; stroke-dasharray: 12 10; }
+      .dim { stroke: #202426; stroke-width: 2; marker-start: url(#arrow); marker-end: url(#arrow); }
+      .callout { stroke: #202426; stroke-width: 2; fill: none; }
+    </style>
+    <marker id="arrow" markerWidth="10" markerHeight="10" refX="5" refY="5" orient="auto-start-reverse">
+      <path d="M 0 0 L 10 5 L 0 10 z" fill="#202426"/>
+    </marker>
+  </defs>
+  <rect class="bg" width="1200" height="760"/>
+  <text class="title" x="60" y="64">JJC V2 - Item 4 - Handle-to-Body Collar</text>
+  <text class="small" x="60" y="96">Purpose: straight taper from the 24 mm handle to the 42 mm lower body shell.</text>
+  <rect class="panel" x="60" y="130" width="1080" height="560" rx="8"/>
+  <text class="subtitle" x="100" y="185">Transition fit</text>
+  <line class="axis" x1="145" y1="390" x2="1060" y2="390"/>
+  <rect class="dowel" x="150" y="374" width="900" height="32" rx="14"/>
+  <path class="handle" d="M 170 342 L 500 342 L 500 438 L 170 438 Z"/>
+  <path class="collar" d="M 500 342 L 650 306 L 650 474 L 500 438 Z"/>
+  <ellipse class="collar" cx="500" cy="390" rx="24" ry="48"/>
+  <ellipse class="collar" cx="650" cy="390" rx="42" ry="84"/>
+  <ellipse class="cut" cx="500" cy="390" rx="14" ry="27"/>
+  <ellipse class="cut" cx="650" cy="390" rx="20" ry="38"/>
+  <path class="body" d="M 650 306 C 770 250, 890 260, 1030 340 L 1030 440 C 890 520, 770 530, 650 474 Z"/>
+  <line class="dim" x1="500" y1="575" x2="650" y2="575"/>
+  <text class="label" x="510" y="615">20 mm collar height</text>
+  <line class="dim" x1="445" y1="342" x2="445" y2="438"/>
+  <text class="label" x="335" y="315">24 mm handle side</text>
+  <line class="dim" x1="710" y1="306" x2="710" y2="474"/>
+  <text class="label" x="700" y="300">42 mm body side</text>
+  <path class="callout" d="M 575 370 C 570 310, 525 260, 470 245"/>
+  <text class="label" x="260" y="245">13.2 mm through bore</text>
+  <text class="small" x="260" y="270">keeps collar centered on dowel</text>
+</svg>

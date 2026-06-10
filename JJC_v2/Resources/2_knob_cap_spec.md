@@ -4,6 +4,12 @@
 
 The knob cap protects the handle end of the dowel and creates the club's catching stop.
 
+Reference diagram:
+
+```text
+Resources/Images/2_knob_cap_fit.svg
+```
+
 ## Geometry
 
 ```text

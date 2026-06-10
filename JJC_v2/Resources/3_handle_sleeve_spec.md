@@ -4,6 +4,12 @@
 
 The handle sleeve creates the long Delphin-style grip around the dowel.
 
+Reference diagram:
+
+```text
+Resources/Images/3_handle_sleeve_fit.svg
+```
+
 ## Geometry
 
 ```text

@@ -1,0 +1,40 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="760" viewBox="0 0 1200 760">
+  <title>JJC V2 dowel rod fit diagram</title>
+  <desc>Diagram showing the 520 mm hardwood dowel as the rigid center spine for the V2 Delphin-style juggling club.</desc>
+  <defs>
+    <style>
+      .bg { fill: #f7f7f2; }
+      .panel { fill: #ffffff; stroke: #2f3437; stroke-width: 2; }
+      .title { font: 700 34px Arial, sans-serif; fill: #202426; }
+      .subtitle { font: 600 24px Arial, sans-serif; fill: #202426; }
+      .label { font: 20px Arial, sans-serif; fill: #202426; }
+      .small { font: 16px Arial, sans-serif; fill: #4b5357; }
+      .dowel { fill: #b98554; stroke: #68401f; stroke-width: 4; }
+      .ghost { fill: #d7ece8; stroke: #1f6f68; stroke-width: 3; opacity: 0.45; }
+      .axis { stroke: #50585c; stroke-width: 2; stroke-dasharray: 12 10; }
+      .dim { stroke: #202426; stroke-width: 2; marker-start: url(#arrow); marker-end: url(#arrow); }
+      .callout { stroke: #202426; stroke-width: 2; fill: none; }
+    </style>
+    <marker id="arrow" markerWidth="10" markerHeight="10" refX="5" refY="5" orient="auto-start-reverse">
+      <path d="M 0 0 L 10 5 L 0 10 z" fill="#202426"/>
+    </marker>
+  </defs>
+  <rect class="bg" width="1200" height="760"/>
+  <text class="title" x="60" y="64">JJC V2 - Item 1 - Dowel Rod</text>
+  <text class="small" x="60" y="96">Purpose: rigid hardwood spine through the Delphin-style practice club.</text>
+  <rect class="panel" x="60" y="130" width="1080" height="560" rx="8"/>
+  <text class="subtitle" x="100" y="185">Full-length center spine</text>
+  <path class="ghost" d="M 185 370 L 265 340 L 630 285 C 780 250, 930 275, 1030 360 C 1050 378, 1050 402, 1030 420 C 930 505, 780 530, 630 495 L 265 440 L 185 410 Z"/>
+  <line class="axis" x1="155" y1="390" x2="1050" y2="390"/>
+  <rect class="dowel" x="155" y="374" width="890" height="32" rx="14"/>
+  <ellipse class="dowel" cx="155" cy="390" rx="16" ry="16"/>
+  <ellipse class="dowel" cx="1045" cy="390" rx="16" ry="16"/>
+  <line class="dim" x1="155" y1="575" x2="1045" y2="575"/>
+  <text class="label" x="505" y="615">520 mm overall dowel length</text>
+  <line class="dim" x1="1080" y1="374" x2="1080" y2="406"/>
+  <text class="label" x="910" y="350">12.7 mm diameter</text>
+  <path class="callout" d="M 580 372 C 535 320, 480 285, 430 270"/>
+  <text class="label" x="250" y="255">Hardwood dowel</text>
+  <text class="small" x="250" y="280">printed sockets use 13.2 mm clearance</text>
+  <text class="small" x="100" y="655">The dowel establishes the straight axis for every printed TPU part.</text>
+</svg>

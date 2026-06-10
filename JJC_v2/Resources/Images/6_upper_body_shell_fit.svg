@@ -1,0 +1,51 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="760" viewBox="0 0 1200 760">
+  <title>JJC V2 upper body shell fit diagram</title>
+  <desc>Diagram showing the upper body shell narrowing from the widest body section toward the nose cap with a dowel sleeve and end bulkheads.</desc>
+  <defs>
+    <style>
+      .bg { fill: #f7f7f2; }
+      .panel { fill: #ffffff; stroke: #2f3437; stroke-width: 2; }
+      .title { font: 700 34px Arial, sans-serif; fill: #202426; }
+      .subtitle { font: 600 24px Arial, sans-serif; fill: #202426; }
+      .label { font: 20px Arial, sans-serif; fill: #202426; }
+      .small { font: 16px Arial, sans-serif; fill: #4b5357; }
+      .upper { fill: #cfe3f2; stroke: #2e5f89; stroke-width: 4; }
+      .sleeve { fill: #7cc4b8; stroke: #1f6f68; stroke-width: 3; }
+      .bulkhead { fill: #f1c75b; stroke: #8b6515; stroke-width: 3; }
+      .cut { fill: #ffffff; stroke: #2e5f89; stroke-width: 2; }
+      .dowel { fill: #b98554; stroke: #68401f; stroke-width: 4; }
+      .axis { stroke: #50585c; stroke-width: 2; stroke-dasharray: 12 10; }
+      .dim { stroke: #202426; stroke-width: 2; marker-start: url(#arrow); marker-end: url(#arrow); }
+      .callout { stroke: #202426; stroke-width: 2; fill: none; }
+    </style>
+    <marker id="arrow" markerWidth="10" markerHeight="10" refX="5" refY="5" orient="auto-start-reverse">
+      <path d="M 0 0 L 10 5 L 0 10 z" fill="#202426"/>
+    </marker>
+  </defs>
+  <rect class="bg" width="1200" height="760"/>
+  <text class="title" x="60" y="64">JJC V2 - Item 6 - Upper Body Shell</text>
+  <text class="small" x="60" y="96">Purpose: continues the wide body and tapers down to the 40 mm nose cap.</text>
+  <rect class="panel" x="60" y="130" width="1080" height="560" rx="8"/>
+  <text class="subtitle" x="100" y="185">Narrowing body section</text>
+  <line class="axis" x1="145" y1="390" x2="1060" y2="390"/>
+  <rect class="dowel" x="170" y="374" width="880" height="32" rx="14"/>
+  <path class="upper" d="M 265 234 C 515 250, 760 292, 980 330 C 1030 350, 1055 370, 1055 390 C 1055 410, 1030 430, 980 450 C 760 488, 515 530, 265 546 C 325 498, 358 442, 358 390 C 358 338, 325 282, 265 234 Z"/>
+  <path class="cut" d="M 285 263 C 530 280, 760 318, 960 352 C 992 365, 1010 378, 1010 390 C 1010 402, 992 415, 960 428 C 760 462, 530 500, 285 517 C 330 475, 355 430, 355 390 C 355 350, 330 305, 285 263 Z"/>
+  <rect class="sleeve" x="265" y="364" width="715" height="52" rx="18"/>
+  <ellipse class="sleeve" cx="265" cy="390" rx="18" ry="26"/>
+  <ellipse class="sleeve" cx="980" cy="390" rx="18" ry="26"/>
+  <rect class="bulkhead" x="265" y="263" width="32" height="254"/>
+  <ellipse class="bulkhead" cx="265" cy="390" rx="20" ry="127"/>
+  <rect class="bulkhead" x="948" y="352" width="32" height="76"/>
+  <ellipse class="bulkhead" cx="980" cy="390" rx="20" ry="38"/>
+  <rect class="dowel" x="170" y="374" width="880" height="32" rx="14"/>
+  <line class="dim" x1="265" y1="600" x2="980" y2="600"/>
+  <text class="label" x="550" y="640">142 mm body section height</text>
+  <line class="dim" x1="220" y1="234" x2="220" y2="546"/>
+  <text class="label" x="145" y="215">78 mm start OD</text>
+  <line class="dim" x1="1090" y1="330" x2="1090" y2="450"/>
+  <text class="label" x="935" y="300">40 mm nose-end OD</text>
+  <path class="callout" d="M 610 364 C 580 300, 520 255, 450 245"/>
+  <text class="label" x="250" y="245">17 mm sleeve OD / 13.2 mm ID</text>
+  <text class="small" x="250" y="270">1.2 mm shell wall around the body section</text>
+</svg>

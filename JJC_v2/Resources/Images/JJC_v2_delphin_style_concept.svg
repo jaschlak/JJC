@@ -1,6 +1,6 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="1400" height="820" viewBox="0 0 1400 820">
   <title>JJC V2 Delphin-style club concept</title>
-  <desc>Concept diagram for a 520 mm dowel-core Delphin-style juggling club.</desc>
+  <desc>Concept diagram for a 502 mm dowel-core Delphin-style juggling club.</desc>
 
   <defs>
     <style>
@@ -27,7 +27,7 @@
 
   <rect class="bg" width="1400" height="820"/>
   <text class="title" x="70" y="70">JJC V2 - Delphin-Style Practice Club</text>
-  <text class="subtitle" x="70" y="102">Original dowel-core club targeting 520 mm length and a 200-220 g finished weight.</text>
+  <text class="subtitle" x="70" y="102">Original dowel-core club targeting 502 mm length and a 200-220 g finished weight.</text>
 
   <line class="axis" x1="145" y1="405" x2="1245" y2="405"/>
   <rect class="dowel" x="150" y="389" width="1090" height="32" rx="14"/>
@@ -64,7 +64,7 @@
   <line class="joint" x1="1220" y1="337" x2="1220" y2="473"/>
 
   <line class="dim" x1="150" y1="640" x2="1240" y2="640"/>
-  <text class="label" x="610" y="680">520 mm overall length</text>
+  <text class="label" x="610" y="680">502 mm overall length</text>
 
   <text class="label" x="110" y="545">Item 2</text>
   <text class="small" x="95" y="570">knob cap</text>

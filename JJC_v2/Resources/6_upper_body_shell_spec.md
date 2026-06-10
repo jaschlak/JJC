@@ -4,6 +4,12 @@
 
 The upper body shell continues from the widest body section and narrows toward the nose cap.
 
+Reference diagram:
+
+```text
+Resources/Images/6_upper_body_shell_fit.svg
+```
+
 ## Geometry
 
 ```text

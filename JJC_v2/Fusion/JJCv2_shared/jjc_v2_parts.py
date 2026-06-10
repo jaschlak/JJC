@@ -7,7 +7,6 @@ import adsk.fusion
 
 DOWEL_DIAMETER_MM = 12.7
 DOWEL_HOLE_DIAMETER_MM = 13.2
-TOTAL_LENGTH_MM = 520.0
 
 KNOB_HEIGHT_MM = 28.0
 HANDLE_LENGTH_MM = 185.0
@@ -15,7 +14,7 @@ HANDLE_OUTER_DIAMETER_MM = 24.0
 COLLAR_HEIGHT_MM = 20.0
 LOWER_BODY_HEIGHT_MM = 115.0
 UPPER_BODY_HEIGHT_MM = 142.0
-NOSE_HEIGHT_MM = 30.0
+NOSE_HEIGHT_MM = 12.0
 
 Z_KNOB_MM = 0.0
 Z_HANDLE_MM = Z_KNOB_MM + KNOB_HEIGHT_MM
@@ -23,6 +22,7 @@ Z_COLLAR_MM = Z_HANDLE_MM + HANDLE_LENGTH_MM
 Z_LOWER_BODY_MM = Z_COLLAR_MM + COLLAR_HEIGHT_MM
 Z_UPPER_BODY_MM = Z_LOWER_BODY_MM + LOWER_BODY_HEIGHT_MM
 Z_NOSE_MM = Z_UPPER_BODY_MM + UPPER_BODY_HEIGHT_MM
+TOTAL_LENGTH_MM = Z_NOSE_MM + NOSE_HEIGHT_MM
 
 BODY_WALL_MM = 1.2
 BODY_SLEEVE_OUTER_DIAMETER_MM = 17.0
@@ -34,7 +34,7 @@ KNOB_SCREW_CHAMFER_DEPTH_MM = 4.0
 
 NOSE_SCREW_CLEARANCE_DIAMETER_MM = 3.2
 NOSE_SCREW_HEAD_CHAMFER_DIAMETER_MM = 10.0
-NOSE_SCREW_HEAD_CHAMFER_DEPTH_MM = 4.0
+NOSE_SCREW_HEAD_CHAMFER_DEPTH_MM = 2.0
 SCREW_SIDE_FILLET_OFFSET_ONE_MM = 9.0
 SCREW_SIDE_FILLET_OFFSET_TWO_MM = 10.0
 SOCKET_SIDE_FILLET_OFFSET_ONE_MM = 18.0
@@ -110,6 +110,21 @@ def extrude_body(component, profile, distance_mm, name):
     body = feature.bodies.item(0)
     body.name = name
     return body
+
+
+def join_extrude(component, profile, distance_mm, name):
+    extrudes = component.features.extrudeFeatures
+    extrude_input = extrudes.createInput(
+        profile,
+        adsk.fusion.FeatureOperations.JoinFeatureOperation
+    )
+    extrude_input.setDistanceExtent(
+        False,
+        adsk.core.ValueInput.createByReal(mm_to_cm(distance_mm))
+    )
+    feature = extrudes.add(extrude_input)
+    feature.name = f'{name} feature'
+    return feature
 
 
 def cut_body(component, profile, distance_mm, name):
@@ -425,7 +440,31 @@ def create_body_shell(component, name, z_offset_mm, height_mm,
         ],
         name
     )
-    extrude_body(
+    join_extrude(
+        component,
+        annular_profile(
+            component,
+            z_offset_mm,
+            start_outer_mm,
+            DOWEL_HOLE_DIAMETER_MM,
+            f'{name} lower bulkhead profile'
+        ),
+        BODY_BULKHEAD_HEIGHT_MM,
+        f'{name} lower bulkhead'
+    )
+    join_extrude(
+        component,
+        annular_profile(
+            component,
+            end_z_mm - BODY_BULKHEAD_HEIGHT_MM,
+            end_outer_mm,
+            DOWEL_HOLE_DIAMETER_MM,
+            f'{name} upper bulkhead profile'
+        ),
+        BODY_BULKHEAD_HEIGHT_MM,
+        f'{name} upper bulkhead'
+    )
+    join_extrude(
         component,
         annular_profile(
             component,
@@ -437,29 +476,16 @@ def create_body_shell(component, name, z_offset_mm, height_mm,
         height_mm,
         f'{name} integrated dowel sleeve'
     )
-    extrude_body(
+    cut_body(
         component,
-        annular_profile(
+        circle_profile(
             component,
             z_offset_mm,
-            shell_inner_diameter(start_outer_mm),
             DOWEL_HOLE_DIAMETER_MM,
-            f'{name} lower bulkhead profile'
+            f'{name} final dowel through-bore profile'
         ),
-        BODY_BULKHEAD_HEIGHT_MM,
-        f'{name} lower bulkhead'
-    )
-    extrude_body(
-        component,
-        annular_profile(
-            component,
-            end_z_mm - BODY_BULKHEAD_HEIGHT_MM,
-            shell_inner_diameter(end_outer_mm),
-            DOWEL_HOLE_DIAMETER_MM,
-            f'{name} upper bulkhead profile'
-        ),
-        BODY_BULKHEAD_HEIGHT_MM,
-        f'{name} upper bulkhead'
+        height_mm,
+        f'{name} final 13.2 mm dowel through-bore cut'
     )
     return shell
 
@@ -490,7 +516,8 @@ def create_upper_body_shell(component, z_offset_mm=0.0):
 
 def create_nose_cap(component, z_offset_mm=0.0):
     outer_diameter_mm = 40.0
-    socket_depth_mm = 22.0
+    screw_face_diameter_mm = 22.0
+    socket_depth_mm = 7.0
     closed_end_mm = NOSE_HEIGHT_MM - socket_depth_mm
 
     body = loft_body(
@@ -499,32 +526,26 @@ def create_nose_cap(component, z_offset_mm=0.0):
             circle_profile(
                 component,
                 z_offset_mm,
-                cap_socket_side_face_diameter(outer_diameter_mm),
-                'Nose cap socket-side softened face profile'
-            ),
-            circle_profile(
-                component,
-                z_offset_mm + (SCREW_SIDE_FILLET_OFFSET_TWO_MM * 0.45),
-                outer_diameter_mm - 6.0,
-                'Nose cap socket-side blend profile'
-            ),
-            circle_profile(
-                component,
-                z_offset_mm + SCREW_SIDE_FILLET_OFFSET_TWO_MM,
                 outer_diameter_mm,
-                'Nose cap full outside profile near socket side'
+                'Nose cap socket-side 40 mm face profile'
             ),
             circle_profile(
                 component,
-                z_offset_mm + NOSE_HEIGHT_MM - SOCKET_SIDE_FILLET_OFFSET_TWO_MM,
+                z_offset_mm + 2.0,
                 outer_diameter_mm,
-                'Nose cap full outside profile near screw side'
+                'Nose cap full-width socket-side shoulder profile'
+            ),
+            circle_profile(
+                component,
+                z_offset_mm + 7.0,
+                outer_diameter_mm - 4.0,
+                'Nose cap short taper profile'
             ),
             circle_profile(
                 component,
                 z_offset_mm + NOSE_HEIGHT_MM,
-                cap_screw_side_face_diameter(outer_diameter_mm),
-                'Nose cap screw-side softened face profile'
+                screw_face_diameter_mm,
+                'Nose cap screw-side compact face profile'
             ),
         ],
         'V2 Item 7 - Nose cap'

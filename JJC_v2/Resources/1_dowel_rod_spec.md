@@ -4,11 +4,17 @@
 
 The dowel rod is the rigid center spine for the JJC V2 Delphin-style club.
 
+Reference diagram:
+
+```text
+Resources/Images/1_dowel_rod_fit.svg
+```
+
 ## Geometry
 
 ```text
 Diameter: 12.7 mm
-Length: 520 mm
+Length: 502 mm
 Material: hardwood dowel
 ```
 

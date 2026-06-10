@@ -6,7 +6,7 @@ Create a light, juggleable, Delphin-style club around a 1/2 inch hardwood dowel.
 
 The target is not to copy Henry's Delphin dimensions exactly. The useful reference points are:
 
-- long training club length around 52 cm
+- long training club length around 51 cm
 - finished weight around 205 g
 - rigid wood spine
 - long handle
@@ -15,7 +15,7 @@ The target is not to copy Henry's Delphin dimensions exactly. The useful referen
 ## Target Geometry
 
 ```text
-Overall length: 520 mm
+Overall length: 502 mm
 Dowel diameter: 12.7 mm
 Dowel clearance holes: 13.2 mm
 Handle OD: 24 mm
@@ -24,9 +24,10 @@ Nose OD: 40 mm
 Knob cap #6 screw pilot: 2.9 mm
 Knob cap screw outer-clearance chamfer: 10.0 mm outside diameter to 2.9 mm pilot diameter
 Nose cap screw clearance: 3.2 mm
-Nose cap screw head chamfer: 10.0 mm diameter x 4.0 mm deep
-Screw-side outside cap shape: lofted asymmetric-style soft end based on 9.0 mm / 10.0 mm fillet target
-Socket-side outside cap shape: lofted asymmetric-style soft end based on 18.0 mm / 3.0 mm fillet target, clamped to preserve socket wall
+Nose cap screw head chamfer: 10.0 mm diameter x 2.0 mm deep
+Nose cap socket-side OD: 40 mm to match Part 6
+Nose cap screw-side face diameter: 22 mm
+Nose cap height: 12 mm
 ```
 
 ## Axial Layout
@@ -38,9 +39,9 @@ Socket-side outside cap shape: lofted asymmetric-style soft end based on 18.0 mm
 | 4 | Handle-to-body collar | 213 mm | 20 mm | 233 mm |
 | 5 | Lower body shell | 233 mm | 115 mm | 348 mm |
 | 6 | Upper body shell | 348 mm | 142 mm | 490 mm |
-| 7 | Nose cap | 490 mm | 30 mm | 520 mm |
+| 7 | Nose cap | 490 mm | 12 mm | 502 mm |
 
-The printed parts stack to 520 mm. The caps have blind sockets, so the dowel does not need to run through every last millimeter of printed bumper material.
+The printed parts stack to 502 mm. The caps have blind sockets, so the dowel does not need to run through every last millimeter of printed bumper material.
 
 ## Body Shape
 

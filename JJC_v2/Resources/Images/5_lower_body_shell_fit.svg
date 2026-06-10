@@ -1,0 +1,59 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="760" viewBox="0 0 1200 760">
+  <title>JJC V2 lower body shell fit diagram</title>
+  <desc>Diagram showing the lower body shell expanding from the collar to the widest body section with a dowel sleeve and end bulkheads.</desc>
+  <defs>
+    <style>
+      .bg { fill: #f7f7f2; }
+      .panel { fill: #ffffff; stroke: #2f3437; stroke-width: 2; }
+      .title { font: 700 34px Arial, sans-serif; fill: #202426; }
+      .subtitle { font: 600 24px Arial, sans-serif; fill: #202426; }
+      .label { font: 20px Arial, sans-serif; fill: #202426; }
+      .small { font: 16px Arial, sans-serif; fill: #4b5357; }
+      .lower { fill: #d7ece8; stroke: #1f6f68; stroke-width: 4; }
+      .sleeve { fill: #7cc4b8; stroke: #1f6f68; stroke-width: 3; }
+      .bulkhead { fill: #f1c75b; stroke: #8b6515; stroke-width: 3; }
+      .cut { fill: #ffffff; stroke: #1f6f68; stroke-width: 2; }
+      .bore { fill: #ffffff; stroke: #202426; stroke-width: 3; stroke-dasharray: 10 7; }
+      .dowel { fill: #b98554; stroke: #68401f; stroke-width: 4; }
+      .axis { stroke: #50585c; stroke-width: 2; stroke-dasharray: 12 10; }
+      .dim { stroke: #202426; stroke-width: 2; marker-start: url(#arrow); marker-end: url(#arrow); }
+      .callout { stroke: #202426; stroke-width: 2; fill: none; }
+    </style>
+    <marker id="arrow" markerWidth="10" markerHeight="10" refX="5" refY="5" orient="auto-start-reverse">
+      <path d="M 0 0 L 10 5 L 0 10 z" fill="#202426"/>
+    </marker>
+  </defs>
+  <rect class="bg" width="1200" height="760"/>
+  <text class="title" x="60" y="64">JJC V2 - Item 5 - Lower Body Shell</text>
+  <text class="small" x="60" y="96">Purpose: expands from the collar into the widest Delphin-style body section.</text>
+  <rect class="panel" x="60" y="130" width="1080" height="560" rx="8"/>
+  <text class="subtitle" x="100" y="185">Shell, sleeve, and bulkheads</text>
+  <line class="axis" x1="145" y1="390" x2="1060" y2="390"/>
+  <path class="lower" d="M 265 306 C 420 220, 650 210, 915 234 C 975 282, 1008 338, 1008 390 C 1008 442, 975 498, 915 546 C 650 570, 420 560, 265 474 Z"/>
+  <path class="cut" d="M 285 325 C 430 250, 650 242, 895 263 C 945 305, 972 350, 972 390 C 972 430, 945 475, 895 517 C 650 538, 430 530, 285 455 Z"/>
+  <rect class="sleeve" x="265" y="364" width="650" height="52" rx="18"/>
+  <ellipse class="sleeve" cx="265" cy="390" rx="18" ry="26"/>
+  <ellipse class="sleeve" cx="915" cy="390" rx="18" ry="26"/>
+  <rect class="bore" x="170" y="374" width="880" height="32" rx="14"/>
+  <ellipse class="bore" cx="265" cy="390" rx="23" ry="34"/>
+  <ellipse class="bore" cx="915" cy="390" rx="23" ry="34"/>
+  <rect class="bulkhead" x="265" y="325" width="32" height="130"/>
+  <ellipse class="bulkhead" cx="265" cy="390" rx="20" ry="65"/>
+  <rect class="bulkhead" x="883" y="263" width="32" height="254"/>
+  <ellipse class="bulkhead" cx="915" cy="390" rx="20" ry="127"/>
+  <rect class="bore" x="170" y="374" width="880" height="32" rx="14"/>
+  <ellipse class="bore" cx="265" cy="390" rx="23" ry="34"/>
+  <ellipse class="bore" cx="915" cy="390" rx="23" ry="34"/>
+  <line class="dim" x1="265" y1="600" x2="915" y2="600"/>
+  <text class="label" x="520" y="640">115 mm body section height</text>
+  <line class="dim" x1="220" y1="306" x2="220" y2="474"/>
+  <text class="label" x="150" y="285">42 mm start OD</text>
+  <line class="dim" x1="1040" y1="234" x2="1040" y2="546"/>
+  <text class="label" x="880" y="215">78 mm end OD</text>
+  <path class="callout" d="M 590 364 C 560 300, 500 255, 430 245"/>
+  <text class="label" x="225" y="245">17 mm sleeve OD / 13.2 mm ID</text>
+  <text class="small" x="225" y="270">white center channel remains open for the dowel</text>
+  <path class="callout" d="M 910 390 C 975 350, 1030 330, 1080 335"/>
+  <text class="label" x="865" y="585">Open dowel bore</text>
+  <text class="small" x="865" y="610">13.2 mm through the sleeve and bulkheads</text>
+</svg>

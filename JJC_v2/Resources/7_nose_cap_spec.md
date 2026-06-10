@@ -4,18 +4,25 @@
 
 The nose cap protects the top end of the club and closes the upper body.
 
+Reference diagram:
+
+```text
+Resources/Images/7_nose_cap_fit.svg
+```
+
 ## Geometry
 
 ```text
-Outer diameter: 40 mm
-Height: 30 mm
+Socket-side outer diameter: 40 mm
+Screw-side face diameter: 22 mm
+Height: 12 mm
 Dowel socket diameter: 13.2 mm
-Socket depth: 22 mm
-Closed end thickness: 8 mm
+Socket depth: 7 mm
+Closed end thickness: 5 mm
 Screw clearance hole: 3.2 mm
-Screw head chamfer: 10.0 mm diameter x 4.0 mm deep
-Screw-side outside shape: lofted asymmetric-style soft end based on 18.0 mm / 3.0 mm fillet target, clamped to preserve screw-seat wall
-Socket-side outside shape: lofted asymmetric-style soft end based on 9.0 mm / 10.0 mm fillet target, clamped to preserve socket wall
+Screw head chamfer: 10.0 mm diameter x 2.0 mm deep
+Socket-side outside shape: 40 mm shoulder matching Part 6 nose-side outer diameter
+Screw-side outside shape: short taper to a compact 22 mm end face
 ```
 
 The screw hole is centered on the club axis. It allows a small wood screw to pass through the TPU cap and bite into the end of the dowel.

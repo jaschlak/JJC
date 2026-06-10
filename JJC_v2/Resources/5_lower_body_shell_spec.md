@@ -4,6 +4,12 @@
 
 The lower body shell starts at the collar and expands into the widest part of the club body.
 
+Reference diagram:
+
+```text
+Resources/Images/5_lower_body_shell_fit.svg
+```
+
 ## Geometry
 
 ```text
@@ -16,6 +22,8 @@ Dowel sleeve OD: 17 mm
 Dowel sleeve ID: 13.2 mm
 Bulkhead height: 4 mm
 ```
+
+The 13.2 mm sleeve ID is an open through-bore for the 1/2 inch dowel rod.
 
 ## Print Orientation
 
