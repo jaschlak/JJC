@@ -2,7 +2,9 @@
 
 Jordan's Juggle Clubs V1 is a 3D-printing and Fusion scripting project for designing a simple juggling club around a rigid 1/2 inch dowel rod spine.
 
-V2 is started in `JJC_v2/` as a Delphin-style, dowel-core practice club targeting a 520 mm length and a 200-220 g finished weight.
+V2 is started in `JJC_v2/` as a Delphin-style, dowel-core practice club targeting a 502 mm length.
+
+V3 is started in `JJC_v3/` as a hollow-body revision focused on lowering the estimated center of rotation compared with V2.
 
 The current version is intentionally non-electronic. There are no LEDs, microcontrollers, batteries, or diffusers in V1. The goal is to learn the CAD-to-print workflow and build up the club as small, testable parts.
 
@@ -13,6 +15,19 @@ The current version is intentionally non-electronic. There are no LEDs, microcon
 - Most printed parts are expected to be TPU.
 - The club will be designed in sections because the printer build volume is limited.
 - Each part gets a numbered resource spec and, when useful, a matching Fusion script.
+
+## Balance Estimates
+
+Center of rotation is documented as the estimated balance point along the club axis, measured from the knob end.
+
+```text
+V1 prototype estimate: 209.1 mm from knob, 50.6% of 413 mm prototype length
+V2 estimate: 272.1 mm from knob, 54.2% of 502 mm length
+V3 target: 255-265 mm from knob, 51-53% of 502 mm length
+V3 estimate: 260.6 mm from knob, 51.9% of 502 mm length
+```
+
+These are calculated estimates using documented geometry and material density assumptions. The real value should be checked by balancing the assembled club on a pencil or round rod.
 
 ## Printer
 

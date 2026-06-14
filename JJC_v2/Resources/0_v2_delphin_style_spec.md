@@ -24,10 +24,10 @@ Nose OD: 40 mm
 Knob cap #6 screw pilot: 2.9 mm
 Knob cap screw outer-clearance chamfer: 10.0 mm outside diameter to 2.9 mm pilot diameter
 Nose cap screw clearance: 3.2 mm
-Nose cap screw head chamfer: 10.0 mm diameter x 2.0 mm deep
 Nose cap socket-side OD: 40 mm to match Part 6
 Nose cap screw-side face diameter: 22 mm
 Nose cap height: 12 mm
+Nose cap screw head chamfer: 10.0 mm diameter x 2.0 mm deep
 ```
 
 ## Axial Layout
@@ -42,6 +42,20 @@ Nose cap height: 12 mm
 | 7 | Nose cap | 490 mm | 12 mm | 502 mm |
 
 The printed parts stack to 502 mm. The caps have blind sockets, so the dowel does not need to run through every last millimeter of printed bumper material.
+
+## Estimated Balance
+
+Using the documented V2 dimensions and estimated material densities:
+
+```text
+Hardwood dowel density assumption: 0.70 g/cm^3
+TPU/plastic density assumption: 1.20 g/cm^3
+Estimated V2 mass: 295.5 g
+Estimated V2 balance point: 272.1 mm from knob end
+Estimated V2 balance ratio: 54.2% of total length
+```
+
+This estimate is the club's center of mass along the dowel axis. It should be checked by balancing a printed assembly on a pencil or round rod.
 
 ## Body Shape
 

@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1300" height="420" viewBox="0 0 1300 420">
+  <title>JJC V3 hollow-body club concept</title>
+  <style>
+    .bg{fill:#f7f7f2}.title{font:700 32px Arial;fill:#202426}.label{font:18px Arial;fill:#202426}.small{font:15px Arial;fill:#4b5357}
+    .part{fill:#d7ece8;stroke:#1f6f68;stroke-width:3}.body{fill:#c6e5df;stroke:#1f6f68;stroke-width:4}.dowel{fill:#b98554;stroke:#68401f;stroke-width:3}
+    .balance{stroke:#c23b22;stroke-width:4}.target{fill:#c23b22}.dim{stroke:#202426;stroke-width:2;marker-start:url(#a);marker-end:url(#a)}
+  </style>
+  <defs><marker id="a" markerWidth="10" markerHeight="10" refX="5" refY="5" orient="auto-start-reverse"><path d="M0 0 L10 5 L0 10z" fill="#202426"/></marker></defs>
+  <rect class="bg" width="1300" height="420"/>
+  <text class="title" x="50" y="55">JJC V3 Hollow-Body Club Concept</text>
+  <rect class="dowel" x="90" y="195" width="1120" height="26" rx="13"/>
+  <path class="part" d="M90 170 C60 190 60 225 90 250 L145 250 C170 230 170 190 145 170 Z"/>
+  <path class="part" d="M145 180 L555 160 L555 260 L145 240 Z"/>
+  <path class="part" d="M555 155 L600 130 L600 290 L555 265 Z"/>
+  <path class="body" d="M600 115 C735 95 870 90 970 105 L970 315 C870 330 735 325 600 305 Z"/>
+  <path class="body" d="M970 105 C1065 125 1150 155 1200 180 L1200 240 C1150 265 1065 295 970 315 Z"/>
+  <path class="part" d="M1200 175 C1240 185 1260 235 1200 245 Z"/>
+  <line class="balance" x1="671" y1="95" x2="671" y2="330"/>
+  <circle class="target" cx="671" cy="95" r="7"/>
+  <text class="label" x="635" y="85">260.6 mm estimated balance</text>
+  <line class="dim" x1="90" y1="355" x2="1212" y2="355"/>
+  <text class="label" x="615" y="390">502 mm overall length</text>
+  <text class="small" x="610" y="335">Part 5: 2.0 mm wall</text>
+  <text class="small" x="980" y="335">Part 6: 1.6 mm wall</text>
+</svg>

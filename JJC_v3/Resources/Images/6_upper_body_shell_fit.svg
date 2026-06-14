@@ -1,0 +1,31 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="700" viewBox="0 0 1200 700">
+  <title>JJC V3 upper hollow body shell fit diagram</title>
+  <style>
+    .bg{fill:#f7f7f2}.title{font:700 32px Arial;fill:#202426}.label{font:20px Arial;fill:#202426}.small{font:16px Arial;fill:#4b5357}
+    .shell{fill:#d7ece8;stroke:#1f6f68;stroke-width:4}.void{fill:#fff;stroke:#1f6f68;stroke-width:2}.plate{fill:#f1c75b;stroke:#8b6515;stroke-width:3}
+    .socket{fill:#7cc4b8;stroke:#1f6f68;stroke-width:3}.insert{fill:#cfe3f2;stroke:#2e5f89;stroke-width:3}.bore{fill:#fff;stroke:#202426;stroke-width:3;stroke-dasharray:8 6}
+    .dim{stroke:#202426;stroke-width:2;marker-start:url(#a);marker-end:url(#a)}
+  </style>
+  <defs><marker id="a" markerWidth="10" markerHeight="10" refX="5" refY="5" orient="auto-start-reverse"><path d="M0 0 L10 5 L0 10z" fill="#202426"/></marker></defs>
+  <rect class="bg" width="1200" height="700"/>
+  <text class="title" x="60" y="60">JJC V3 - Item 6 - Upper Hollow Body Shell</text>
+  <path class="shell" d="M230 150 C470 175 690 220 930 300 C980 350 980 450 930 500 C690 565 470 540 230 550 C160 440 160 260 230 150 Z"/>
+  <path class="void" d="M260 195 C490 215 695 255 900 325 C935 360 935 430 900 465 C695 520 490 500 260 505 C205 420 205 280 260 195 Z"/>
+  <rect class="insert" x="160" y="318" width="70" height="64" rx="8"/>
+  <path class="insert" d="M265 250 L455 292 L405 330 L405 370 L455 408 L265 450 Z"/>
+  <rect class="socket" x="230" y="250" width="88" height="200"/>
+  <rect class="plate" x="230" y="250" width="35" height="200"/>
+  <rect class="plate" x="900" y="320" width="35" height="110"/>
+  <rect class="bore" x="220" y="338" width="750" height="24" rx="12"/>
+  <line class="dim" x1="230" y1="610" x2="930" y2="610"/>
+  <text class="label" x="535" y="650">142 mm height</text>
+  <text class="label" x="160" y="130">78 mm OD</text>
+  <text class="label" x="870" y="285">40 mm OD</text>
+  <text class="label" x="215" y="235">thickened hollow insert at Part 5 joint</text>
+  <text class="label" x="500" y="220">hollow air cavity</text>
+  <text class="small" x="500" y="245">no full-length dowel sleeve</text>
+  <text class="small" x="170" y="475">2.5 mm wall, 69.4 mm OD / 64.4 mm ID insert slides into Part 5</text>
+  <text class="small" x="445" y="420">5 mm main flare plus short wall blend reduces the flat shoulder</text>
+  <text class="small" x="245" y="500">74.4 mm socket ID, 76.4 mm socket OD around Part 5 lip</text>
+  <text class="small" x="760" y="470">3 mm closed top plate with 13.2 mm dowel hole</text>
+</svg>

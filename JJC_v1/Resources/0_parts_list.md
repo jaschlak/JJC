@@ -9,6 +9,21 @@ Goal: design a simple printable juggling club for Jordan's Juggle Clubs around a
 - Planned material: mostly TPU
 - Design assumption: the full club will be printed in sections
 
+## Estimated Balance
+
+V1 is an early prototype and does not lock the final dowel length. Using the first-test stacked part dimensions documented in these specs:
+
+```text
+Estimated prototype length: 413 mm
+Hardwood dowel density assumption: 0.70 g/cm^3
+TPU/plastic density assumption: 1.20 g/cm^3
+Estimated V1 prototype mass: 314.1 g
+Estimated V1 prototype balance point: 209.1 mm from knob end
+Estimated V1 prototype balance ratio: 50.6% of prototype length
+```
+
+This is an estimate only. V1 was meant to test part fit and printability, not final juggling balance.
+
 ## Parts
 
 ### 1. Dowel Rod

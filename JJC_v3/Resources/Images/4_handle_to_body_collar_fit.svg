@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1000" height="420" viewBox="0 0 1000 420">
+  <title>JJC V3 handle-to-body collar fit diagram</title>
+  <style>
+    .bg{fill:#f7f7f2}.title{font:700 30px Arial;fill:#202426}.label{font:20px Arial;fill:#202426}.small{font:16px Arial;fill:#4b5357}
+    .collar{fill:#d7ece8;stroke:#1f6f68;stroke-width:4}.hole{fill:#fff;stroke:#202426;stroke-width:3;stroke-dasharray:8 6}
+    .dim{stroke:#202426;stroke-width:2;marker-start:url(#a);marker-end:url(#a)}
+  </style>
+  <defs><marker id="a" markerWidth="10" markerHeight="10" refX="5" refY="5" orient="auto-start-reverse"><path d="M0 0 L10 5 L0 10z" fill="#202426"/></marker></defs>
+  <rect class="bg" width="1000" height="420"/>
+  <text class="title" x="50" y="55">JJC V3 - Item 4 - Handle-to-Body Collar</text>
+  <path class="collar" d="M300 170 L700 105 L700 315 L300 250 Z"/>
+  <rect class="hole" x="300" y="195" width="400" height="30" rx="15"/>
+  <line class="dim" x1="300" y1="350" x2="700" y2="350"/>
+  <text class="label" x="455" y="390">20 mm height</text>
+  <text class="label" x="235" y="155">24 mm OD</text>
+  <text class="label" x="650" y="90">42 mm OD</text>
+  <text class="small" x="390" y="280">13.2 mm through hole</text>
+</svg>

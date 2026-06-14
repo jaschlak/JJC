@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1000" height="460" viewBox="0 0 1000 460">
+  <title>JJC V3 nose cap fit diagram</title>
+  <style>
+    .bg{fill:#f7f7f2}.title{font:700 30px Arial;fill:#202426}.label{font:20px Arial;fill:#202426}.small{font:16px Arial;fill:#4b5357}
+    .cap{fill:#d7ece8;stroke:#1f6f68;stroke-width:4}.socket{fill:#fff;stroke:#202426;stroke-width:3;stroke-dasharray:8 6}
+    .screw{fill:none;stroke:#8b6515;stroke-width:4}.dim{stroke:#202426;stroke-width:2;marker-start:url(#a);marker-end:url(#a)}
+  </style>
+  <defs><marker id="a" markerWidth="10" markerHeight="10" refX="5" refY="5" orient="auto-start-reverse"><path d="M0 0 L10 5 L0 10z" fill="#202426"/></marker></defs>
+  <rect class="bg" width="1000" height="460"/>
+  <text class="title" x="50" y="55">JJC V3 - Item 7 - Nose Cap</text>
+  <path class="cap" d="M290 135 L620 135 C690 165 730 210 750 260 C730 310 690 355 620 385 L290 385 Z"/>
+  <rect class="socket" x="290" y="215" width="210" height="90" rx="45"/>
+  <path class="screw" d="M500 260 L730 260"/>
+  <line class="dim" x1="290" y1="420" x2="750" y2="420"/>
+  <text class="label" x="475" y="450">12 mm height</text>
+  <text class="label" x="250" y="115">40 mm socket-side OD</text>
+  <text class="label" x="655" y="120">22 mm screw face</text>
+  <text class="small" x="285" y="335">13.2 mm socket, 7 mm deep</text>
+  <text class="small" x="600" y="335">3.2 mm screw clearance</text>
+</svg>
