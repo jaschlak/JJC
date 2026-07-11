@@ -1,0 +1,113 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1400" height="900" viewBox="0 0 1400 900">
+  <title>ESP32 WS2812B Basic LED Test Wiring</title>
+  <style>
+    .bg { fill: #f7f7f2; }
+    .box { fill: #ffffff; stroke: #222; stroke-width: 3; rx: 14; }
+    .smallbox { fill: #ffffff; stroke: #222; stroke-width: 2.5; rx: 10; }
+    .title { font: 700 34px Arial, sans-serif; fill: #111; }
+    .label { font: 700 22px Arial, sans-serif; fill: #111; }
+    .text { font: 18px Arial, sans-serif; fill: #222; }
+    .small { font: 15px Arial, sans-serif; fill: #333; }
+    .pin { font: 700 17px Arial, sans-serif; fill: #111; }
+    .red { stroke: #d72626; }
+    .black { stroke: #111111; }
+    .green { stroke: #1d8f3a; }
+    .blue { stroke: #246bd1; }
+    .wire { fill: none; stroke-width: 6; stroke-linecap: round; stroke-linejoin: round; }
+    .thin { fill: none; stroke-width: 3; stroke-linecap: round; stroke-linejoin: round; }
+    .dot-red { fill: #d72626; }
+    .dot-black { fill: #111; }
+    .dot-green { fill: #1d8f3a; }
+    .warn { fill: #fff3cd; stroke: #8a6d00; stroke-width: 2; rx: 10; }
+  </style>
+
+  <rect class="bg" width="1400" height="900"/>
+  <text class="title" x="60" y="60">Basic ESP32 to WS2812B LED Strip Test</text>
+  <text class="text" x="60" y="95">Use a short LED section first, around 8-16 LEDs. Do not power the full strip from the ESP32.</text>
+
+  <!-- ESP32 -->
+  <rect class="box" x="80" y="190" width="300" height="360"/>
+  <text class="label" x="170" y="230">ESP32</text>
+  <text class="small" x="130" y="260">Powered by USB-C from computer</text>
+
+  <circle class="dot-green" cx="380" cy="330" r="9"/>
+  <text class="pin" x="225" y="337">GPIO 5</text>
+  <circle class="dot-black" cx="380" cy="430" r="9"/>
+  <text class="pin" x="245" y="437">GND</text>
+  <rect class="smallbox" x="130" y="475" width="200" height="44"/>
+  <text class="small" x="155" y="503">USB-C to computer</text>
+
+  <!-- USB power pigtail -->
+  <rect class="box" x="80" y="660" width="300" height="150"/>
+  <text class="label" x="122" y="700">USB 5V Power</text>
+  <text class="small" x="115" y="730">Jienk 2-wire pigtail</text>
+  <circle class="dot-red" cx="380" cy="760" r="9"/>
+  <text class="pin" x="245" y="767">red 5V</text>
+  <circle class="dot-black" cx="380" cy="790" r="9"/>
+  <text class="pin" x="225" y="797">black GND</text>
+
+  <!-- Resistor -->
+  <rect class="smallbox" x="560" y="300" width="190" height="60"/>
+  <text class="label" x="590" y="337">330 ohm</text>
+  <text class="small" x="602" y="356">data resistor</text>
+
+  <!-- Capacitor -->
+  <rect class="smallbox" x="560" y="620" width="220" height="110"/>
+  <text class="label" x="605" y="655">1000 uF</text>
+  <text class="small" x="600" y="684">capacitor across</text>
+  <text class="small" x="610" y="706">LED 5V and GND</text>
+  <circle class="dot-red" cx="780" cy="650" r="8"/>
+  <text class="pin" x="795" y="655">+</text>
+  <circle class="dot-black" cx="780" cy="700" r="8"/>
+  <text class="pin" x="795" y="705">-</text>
+
+  <!-- LED strip -->
+  <rect class="box" x="950" y="230" width="340" height="430"/>
+  <text class="label" x="1034" y="270">WS2812B Strip</text>
+  <text class="small" x="1018" y="300">Use the input end: DIN</text>
+  <text class="small" x="1010" y="325">Arrow points away from ESP32</text>
+
+  <circle class="dot-red" cx="950" cy="420" r="9"/>
+  <text class="pin" x="980" y="427">5V</text>
+  <circle class="dot-black" cx="950" cy="500" r="9"/>
+  <text class="pin" x="980" y="507">GND</text>
+  <circle class="dot-green" cx="950" cy="330" r="9"/>
+  <text class="pin" x="980" y="337">DIN</text>
+
+  <rect x="1035" y="380" width="38" height="90" fill="#ffe066" stroke="#222" stroke-width="2"/>
+  <rect x="1095" y="380" width="38" height="90" fill="#9be7ff" stroke="#222" stroke-width="2"/>
+  <rect x="1155" y="380" width="38" height="90" fill="#ff9aa2" stroke="#222" stroke-width="2"/>
+  <rect x="1215" y="380" width="38" height="90" fill="#b5ead7" stroke="#222" stroke-width="2"/>
+  <text class="small" x="1050" y="505">short section only</text>
+
+  <!-- Wires -->
+  <path class="wire green" d="M380 330 H560"/>
+  <path class="wire green" d="M750 330 H950"/>
+
+  <path class="wire red" d="M380 760 H850 V420 H950"/>
+  <path class="wire black" d="M380 790 H835 V500 H950"/>
+  <path class="wire black" d="M380 430 H835 V500"/>
+
+  <path class="thin red" d="M780 650 H850"/>
+  <path class="thin black" d="M780 700 H835"/>
+
+  <!-- Ground node -->
+  <circle class="dot-black" cx="835" cy="500" r="12"/>
+  <text class="small" x="725" y="535">shared ground splice</text>
+  <text class="small" x="705" y="555">USB GND + ESP32 GND + LED GND</text>
+
+  <!-- Warning box -->
+  <rect class="warn" x="850" y="715" width="470" height="105"/>
+  <text class="label" x="880" y="750">Important</text>
+  <text class="text" x="880" y="780">All grounds connect together.</text>
+  <text class="text" x="880" y="807">Do not connect 5V to ESP32 3.3V.</text>
+
+  <!-- Legend -->
+  <rect class="smallbox" x="80" y="115" width="460" height="54"/>
+  <line class="wire red" x1="110" y1="143" x2="160" y2="143"/>
+  <text class="small" x="175" y="149">5V power</text>
+  <line class="wire black" x1="275" y1="143" x2="325" y2="143"/>
+  <text class="small" x="340" y="149">ground</text>
+  <line class="wire green" x1="425" y1="143" x2="475" y2="143"/>
+  <text class="small" x="490" y="149">data</text>
+</svg>

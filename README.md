@@ -6,7 +6,9 @@ V2 is started in `JJC_v2/` as a Delphin-style, dowel-core practice club targetin
 
 V3 is started in `JJC_v3/` as a hollow-body revision focused on lowering the estimated center of rotation compared with V2.
 
-The current version is intentionally non-electronic. There are no LEDs, microcontrollers, batteries, or diffusers in V1. The goal is to learn the CAD-to-print workflow and build up the club as small, testable parts.
+The printed club version folders, `JJC_v1/`, `JJC_v2/`, and `JJC_v3/`, are mechanical prototypes. They intentionally have no LEDs, microcontrollers, batteries, or diffusers.
+
+Electronics prototyping is tracked separately in `electronics/`. Its `v1/` folder means electronics prototype v1, not printed club V1. It starts with ESP32 and WS2812B LED bench tests before any final club integration.
 
 ## Design Direction
 
@@ -58,6 +60,14 @@ Fusion/
   JJCv1_3_handle_sleeve/
   JJCv1_4_knob cap/
   JJCv1_9_full_club_assembly/
+
+../electronics/
+  README.md
+  v1/
+    README.md
+    parts_list.md
+    assembly_guide.md
+    esp32_programming.md
 ```
 
 ## Current Parts
